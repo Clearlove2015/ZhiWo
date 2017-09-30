@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_userinfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindows"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title=""
+        app:titleTextColor="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="个人信息"
+            android:textColor="@color/colorTitle"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/personal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_hasletter="false"
+                app:vc_title="个人主页"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_content="42022219******3774"
+                app:vc_hasletter="false"
+                app:vc_title="身份证号"/>
+
+            <RelativeLayout
+                android:id="@+id/head_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawer_item_selector"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/letter"
+                    android:text="头像"
+                    android:textColor="@color/colorNormal"
+                    android:textSize="@dimen/textSize_16"/>
+
+                <ImageView
+                    android:id="@+id/head"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/head"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorLine"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/nickname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_content="zhaoqy"
+                app:vc_hasletter="false"
+                app:vc_title="昵称"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_content="13421812821"
+                app:vc_hasletter="false"
+                app:vc_title="手机号"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/weixin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_content="zhao_qingyue"
+                app:vc_hasletter="false"
+                app:vc_title="微信号"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/qq"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_content="1023755730"
+                app:vc_hasletter="false"
+                app:vc_title="QQ号"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_content="1023755730@qq.com"
+                app:vc_hasletter="false"
+                app:vc_title="邮箱地址"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/airpay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_content="1023755730@qq.com"
+                app:vc_hasletter="false"
+                app:vc_title="支付宝"/>
+
+            <RelativeLayout
+                android:id="@+id/qrcode_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                android:background="@drawable/drawer_item_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/letter"
+                    android:text="二维码名片"
+                    android:textColor="@color/colorNormal"
+                    android:textSize="@dimen/textSize_16"/>
+
+                <ImageView
+                    android:id="@+id/qrcode"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_qr_code"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorLine"/>
+
+            </RelativeLayout>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/sex"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_content="男"
+                app:vc_hasletter="false"
+                app:vc_title="性别"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/area"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_content="广东 深圳"
+                app:vc_hasletter="false"
+                app:vc_title="地区"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/signature"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_content="天道酬勤"
+                app:vc_hasletter="false"
+                app:vc_title="个性签名"/>
+
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                android:layout_marginTop="30dp"
+                android:text="退出登录"
+                android:gravity="center"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/textSize_16"
+                android:background="@drawable/drawer_item_selector"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

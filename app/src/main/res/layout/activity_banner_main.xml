@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_clouddisk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindows"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title=""
+        app:titleTextColor="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Banner"
+            android:textColor="@color/colorTitle"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/banner0"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_title="动画预览"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/banner1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_title="内置样式预览"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/banner2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_title="自定义样式预览"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/banner3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_title="指示器设置预览"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/banner4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_title="加载本地图片"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

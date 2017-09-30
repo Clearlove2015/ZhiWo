@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">知我</string>
+
+    <string name="login_account"><u>帐号登录</u></string>
+    <string name="login_mobile"><u>手机号登录</u></string>
+    <string name="login_register"><u>注册帐号</u></string>
+    <string name="login_sended_vericode">%d秒后重发</string>
+    <string name="login_resend">重新发送</string>
+    <string name="login_get_vericode">获取验证码</string>
+
+
+    <string name="account_account_empty">帐号不能为空</string>
+    <string name="account_pasword_empty">密码不能为空</string>
+    <string name="account_account_error">请输入正确的帐号</string>
+    <string name="account_password_error">请输入正确的密码</string>
+    <string name="account_email_error">请输入正确的邮箱</string>
+    <string name="account_login_mobile_err">请输入有效的手机号</string>
+    <string name="account_retrive_pwd_mobvericode">请输入手机号或验证码</string>
+    <string name="account_input_mobile_err">您输入的手机号码不正确</string>
+    <string name="account_get_vericode_success">验证码将以短信形式发送到您的手机</string>
+    <string name="account_get_vericode_failed">获取验证码失败</string>
+    <string name="account_vericode_repeat_get">短时间内不能重复发送验证码</string>
+    <string name="account_vericode_timer_more">该手机号重复获取验证码次数过多，请明天再试</string>
+    <string name="account_retrive_pwd_mobile_unbind">该手机尚未绑定，请确认输入是否正确</string>
+    <string name="account_reset_pwd_new_err">请输入6-14位新密码</string>
+    <string name="account_reset_pwd_new_specail">新密码不能含有特殊字符</string>
+    <string name="account_reset_pwd_new_lessonenum">新密码至少包含1个数字和1个字母</string>
+    <string name="account_reset_pwd_success">重置密码成功, 请使用新密码登录</string>
+    <string name="account_reset_pwd_failed">重置密码失败</string>
+    <string name="account_vericode_has_invalid">验证码已失效,请重新获取</string>
+    <string name="account_vericode_err">短信验证码错误,请重试</string>
+    <string name="account_vericode_has_err">验证码有误</string>
+    <string name="account_vericode_has_used">验证码已校验</string>
+    <string name="account_login_success">登录成功</string>
+    <string name="account_login_failed">登录失败</string>
+    <string name="account_login_user_err">用户名不存在</string>
+    <string name="account_login_userpwd_err">密码错误</string>
+    <string name="account_logout">退出登录</string>
+    <string name="account_logout_failed">登出失败，请检查网络</string>
+    <string name="account_locate_failed">无法获取你的位置信息。</string>
+    <string name="account_invalid">您的帐号已在其它终端上登录，您被迫下线。</string>
+
+
+    <string name="common_set_failed">"操作失败，请检查网络！"</string>
+    <string name="common_network_abnormal">网络通信出现问题，请稍后再试。</string>
+    <string name="common_network_data_update">更新中，请稍后...</string>
+    <string name="common_network_version_update">正在检查更新请稍后...</string>
+
+    <string name="tip_loading">正在加载中...</string>
+    <string name="tip_sending">正在提交中...</string>
+    <string name="tip_checking">正在检查更新...</string>
+    <string name="tip_logining">正在登录中...</string>
+    <string name="tip_downloading">正在下载中...</string>
+    <string name="tip_setting">正在设置中...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="all_pic">全部图片</string>
+    <string name="preview_without_num">预览</string>
+    <string name="preview_with_num">预览(%1$d)</string>
+    <string name="choose_pic_finish_with_num">发送(%1$d/%2$d)</string>
+    <string name="choose_pic_num_out_of_index">你最多只能选择%1$d张照片</string>
+    <string name="choose_pic">选择</string>
+    <string name="not_choose_any_pick">你还没有选择任何图片</string>
+    <string name="uploading_images">正在批量上传</string>
+
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--标题栏的颜色-->
+    <color name="colorPrimary">#212121</color>
+    <!--状态栏的颜色-->
+    <color name="colorPrimaryDark">@color/colorBlack</color>
+    <!--控件的选中颜色，即checked或selected状态的颜色。-->
+    <color name="colorAccent">#212121</color>
+
+    <color name="colorWindows">#444444</color>
+    <color name="colorNormal">#bbbbbb</color>
+    <color name="colorHint">#85817c</color>
+    <color name="colorTitle">#cccccc</color>
+    <color name="colorLine">#ff444444</color>
+    <color name="colorItemNormal">#666666</color>
+    <color name="colorItemPress">#3C3C3C</color>
+
+    <color name="colorCircleBg">#aaaaaa</color>
+    <color name="colorCircle">#444444</color>
+
+</resources>

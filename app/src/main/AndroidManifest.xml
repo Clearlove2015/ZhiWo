@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.zhaoqy.self">
+
+    <!-- 通过GPS得到精确位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 通过网络得到粗略位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 访问网络. 某些位置信息需要从网络服务器获取 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 访问WiFi状态. 需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 修改WiFi状态. 发起WiFi扫描, 需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 访问网络状态, 检测网络的可用性. 需要网络运营商相关信息用于网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 访问网络的变化, 需要某些信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <!-- 读联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!-- 写联系人权限 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <!-- 拨号权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- 读短信权限 -->
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <!-- 获取通讯录 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <!-- 读取手机状态, 需要某些信息用于网络定位 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- 允许程序挂载和反挂载文件系统可移动存储 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 读取内存卡 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 写内存卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- 获取拍照权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+    <application
+        android:name=".app.SelfApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.start.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.start.GuideActivity"
+            android:label="引导页"
+            android:theme="@style/SplashTheme"/>
+        <activity
+            android:name=".ui.activity.start.LoginActivity"
+            android:label="登录"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"/>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:label="主页"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.info.UserInfoActivity"
+            android:label="个人信息"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.info.HomePageActivity"
+            android:label="个人主页"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.info.BigImageActivity"
+            android:label="大图"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.info.EditActivity"
+            android:label="编辑页"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.info.QrcodeActivity"
+            android:label="二维码"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.drawer.DevelopActivity"
+            android:label="开发"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.drawer.WebViewActivity"
+            android:hardwareAccelerated="false"
+            android:label="网页"
+            android:layerType="software"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.drawer.PlatformActivity"
+            android:label="平台"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.drawer.NoteActivity"
+            android:label="笔记"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.drawer.CloudDiskActivity"
+            android:label="云盘"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.drawer.NewsActivity"
+            android:label="新闻资讯"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.setting.SettingActivity"
+            android:label="设置"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.setting.PayPwdActivity"
+            android:label="支付密码"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.setting.FeedbackActivity"
+            android:label="意见反馈"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.setting.about.AboutActivity"
+            android:label="关于"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.setting.about.CopyrightActivity"
+            android:label="版权信息"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.setting.about.GithubActivity"
+            android:label="Github"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.setting.about.AwardActivity"
+            android:label="打赏"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.setting.about.ThanksActivity"
+            android:label="致谢"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.banner.BannerMainActivity"
+            android:label="Banner"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.banner.BannerAnimationActivity"
+            android:label="Banner动画预览"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.banner.BannerStyleActivity"
+            android:label="Banner内置样式预览"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.banner.BannerIndicatorActivity"
+            android:label="Banner指示器设置预览"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.banner.BannerCustomActivity"
+            android:label="Banner自定义样式预览"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.banner.BannerLocalActivity"
+            android:label="Banner加载本地图片"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.mvp.MvpActivity"
+            android:label="MVP模式-妹子"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.mvp.ImageDetailActivity"
+            android:label="MVP模式-图片详情"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.album.ImagePickerActivity"
+            android:label="相册选择器"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.album.AlbumActivity"
+            android:label="选择图片"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.album.ImagePreviewActivity"
+            android:label="图片预览"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.recyclerview.RecyclerViewActivity"
+            android:label="RecyclerView"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.recyclerview.RecyclerLinearActivity"
+            android:label="线性RecyclerView"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.recyclerview.RecyclerGridActivity"
+            android:label="网格RecyclerView"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.recyclerview.RecyclerStaggerActivity"
+            android:label="瀑布RecyclerView"
+            android:theme="@style/BaseTheme"/>
+
+        <activity
+            android:name=".ui.activity.main.recyclerview.SwipeToDeleteActivity"
+            android:label="滑动删除RecyclerView"
+            android:theme="@style/BaseTheme"/>
+
+        <activity
+            android:name=".ui.activity.main.recyclerview.RecyclerDragActivity"
+            android:label="拖拽RecyclerView"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.BookActivity"
+            android:label="书单"
+            android:theme="@style/BaseTheme"/>
+
+        <service
+            android:name=".service.FloatingBallService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+
+    </application>
+
+</manifest>

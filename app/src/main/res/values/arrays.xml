@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="home_tabs">
+        <item>知识积累</item>
+        <item>书单</item>
+        <item>发现</item>
+    </string-array>
+
+    <string-array name="book_classify">
+        <item>编程</item>
+        <item>互联网</item>
+        <item>心理学</item>
+        <item>历史</item>
+        <item>小说</item>
+        <item>生活</item>
+        <item>财务</item>
+    </string-array>
+
+    <string-array name="book_program">
+        <item>Linux私房菜</item>
+        <item>C++ Primer</item>
+        <item>C语言</item>
+        <item>Java</item>
+        <item>Ubuntu</item>
+        <item>Q4编程</item>
+        <item>TCP/IP详解</item>
+        <item>App研发录</item>
+        <item>数据结构</item>
+    </string-array>
+
+    <string-array name="book_internet">
+        <item>LBS应用开发</item>
+        <item>大数据</item>
+        <item>互联网+物流</item>
+        <item>黑客与画家</item>
+    </string-array>
+
+    <string-array name="book_psychology">
+        <item>本色</item>
+        <item>爱难猜</item>
+        <item>色眼再识人</item>
+    </string-array>
+
+    <string-array name="book_history">
+        <item>历史不忍细看</item>
+        <item>论三国智慧</item>
+        <item>赵匡胤</item>
+        <item>朱元璋</item>
+    </string-array>
+
+    <string-array name="book_fiction">
+        <item>致青春</item>
+        <item>毕业了我们一无所有</item>
+        <item>百年孤独</item>
+        <item>苏菲的世界</item>
+        <item>一座城池</item>
+        <item>活着</item>
+        <item>我的抗战</item>
+    </string-array>
+
+    <string-array name="book_life">
+        <item>拆掉思维的墙</item>
+        <item>随遇而安</item>
+        <item>看见</item>
+        <item>痛并快乐着</item>
+    </string-array>
+
+    <string-array name="knowledge">
+        <item>Banner图片轮播控件</item>
+        <item>MVP模式</item>
+        <item>相册选择器</item>
+        <item>RecyclerView</item>
+    </string-array>
+
+    <string-array name="thanks">
+        <item>· Github</item>
+        <item>· 码云</item>
+        <item>· 简书</item>
+    </string-array>
+
+    <array name="banner_url">
+        <item>http://img.zcool.cn/community/01b72057a7e0790000018c1bf4fce0.png</item>
+        <item>http://img.zcool.cn/community/01fca557a7f5f90000012e7e9feea8.jpg</item>
+        <item>http://img.zcool.cn/community/01996b57a7f6020000018c1bedef97.jpg</item>
+        <item>http://img.zcool.cn/community/01700557a7f42f0000018c1bd6eb23.jpg</item>
+    </array>
+
+    <array name="banner_title">
+        <item>己所不欲，勿施于人。——孔子</item>
+        <item>学而时习之，不亦说乎? ——孔子</item>
+        <item>有朋自远方来，不亦乐乎？ ——孔子</item>
+        <item>人不知而不愠，不亦君子乎？ ——孔子</item>
+    </array>
+
+    <array name="banner_anim">
+        <item>Default</item>
+        <item>Accordion</item>
+        <item>BackgroundToForeground</item>
+        <item>ForegroundToBackground</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>DepthPage</item>
+        <item>FlipHorizontal</item>
+        <item>FlipVertical</item>
+        <item>RotateDown</item>
+        <item>RotateUp</item>
+        <item>ScaleInOut</item>
+        <item>Stack</item>
+        <item>Tablet</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>ZoomOutSlide</item>
+    </array>
+
+    <string-array name="banner_style">
+        <item>NOT_INDICATOR</item>
+        <item>CIRCLE_INDICATOR</item>
+        <item>NUM_INDICATOR</item>
+        <item>NUM_INDICATOR_TITLE</item>
+        <item>CIRCLE_INDICATOR_TITLE</item>
+        <item>CIRCLE_INDICATOR_TITLE_INSIDE</item>
+    </string-array>
+
+    <string-array name="banner_indicator">
+        <item>LEFT</item>
+        <item>CENTER</item>
+        <item>RIGHT</item>
+    </string-array>
+
+    <string-array name="copyright">
+        <item>butterknife</item>
+        <item>permission</item>
+        <item>barlibrary</item>
+        <item>CircleImageView</item>
+        <item>PhotoView</item>
+        <item>Glide</item>
+        <item>Picasso</item>
+        <item>Fresco</item>
+        <item>GifView</item>
+        <item>Blurry</item>
+        <item>Banner</item>
+        <item>NiceDialog</item>
+        <item>android-percent-support-extend</item>
+        <item>EventBus</item>
+        <item>bga-qrcodecore</item>
+        <item>android-common-utils</item>
+        <item>MaterialRatingBar</item>
+        <item>suspension-fab</item>
+        <item>recovery</item>
+        <item>EasyRecyclerView</item>
+
+    </string-array>
+
+    <string-array name="recyclerview">
+        <item>线性布局</item>
+        <item>网格布局</item>
+        <item>瀑布布局</item>
+        <item>滑动删除</item>
+        <item>拖动切换位置</item>
+    </string-array>
+
+    <string-array name="about">
+        <item>检查更新</item>
+        <item>功能说明</item>
+        <item>版本说明</item>
+        <item>版权信息</item>
+        <item>去评分</item>
+        <item>打赏</item>
+        <item>分享好友</item>
+        <item>致谢</item>
+    </string-array>
+
+
+
+</resources>

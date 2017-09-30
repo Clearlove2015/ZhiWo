@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_clouddisk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindows"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title=""
+        app:titleTextColor="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Banner自定义样式预览"
+            android:textColor="@color/colorTitle"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:indicator_drawable_selected="@drawable/banner_indicator_selected"
+            app:indicator_drawable_unselected="@drawable/banner_indicator_unselected"
+            app:indicator_height="8dp"
+            app:indicator_margin="4dp"
+            app:indicator_width="8dp"/>
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            app:indicator_drawable_selected="@color/colorMain"
+            app:indicator_drawable_unselected="@android:color/white"
+            app:indicator_height="4dp"
+            app:indicator_margin="4dp"
+            app:indicator_width="20dp"/>
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            app:title_background="#555CB85C"
+            app:title_height="30dp"
+            app:title_textcolor="@android:color/white"
+            app:title_textsize="10sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

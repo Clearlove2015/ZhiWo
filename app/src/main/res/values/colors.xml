@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#009688</color>
+    <color name="colorAccent">#5677fc</color>
+    <color name="transparent">#00111111</color>
+
+    <color name="colorRed">#FF0000</color>
+    <color name="colorBlue">#00CCFF</color>
+    <color name="colorGreen">#A3DEA3</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLightGray">#AAAAAA</color>
+
+    <!-- 标题栏背景颜色 -->
+    <color name="colorBar">#F5F5F5</color>
+
+    <color name="colorWindows">#F5F5F5</color>
+    <color name="colorNormal">#222222</color>
+    <color name="colorHint">#7A7E83</color>
+    <color name="colorTitle">#ffffff</color>
+    <color name="colorLine">#ffeeeeee</color>
+
+    <color name="colorItemNormal">#ffffff</color>
+    <color name="colorItemPress">#bbbbbb</color>
+    <color name="colorCircleBg">#B4B4B4</color>
+    <color name="colorCircle">#ffffff</color>
+
+    <color name="colorVericodeDisable">#109EA2</color>
+    <color name="colorVericodeNormal">#109EA2</color>
+    <color name="colorVericodePressed">#109EA2</color>
+    <color name="colorVericode">#80beba</color>
+
+    <color name="colorEmeraldGreenDisable">#440f9e98</color>
+    <color name="colorEmeraldGreenNor">#0f9e98</color>
+    <color name="colorEmeraldGreenPress">#0c837e</color>
+
+    <color name="colorGithub">#1E2327</color>
+    <color name="colorDevelopers">#6AB344</color>
+
+    <color name="colorMain">#5CB85C</color>
+
+</resources>

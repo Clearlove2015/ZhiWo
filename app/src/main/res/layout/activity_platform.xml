@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_platform"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindows"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title=""
+        app:titleTextColor="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="平台"
+            android:textColor="@color/colorTitle"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/careland"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_title="凯立德开放平台"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/gaode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_title="高德开放平台"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/baidu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_title="百度开放平台"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/xunfei"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_title="讯飞开放平台"/>
+
+            <com.zhaoqy.self.ui.widget.VerticalCard
+                android:id="@+id/weixin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_card_55"
+                app:vc_title="微信小程序"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

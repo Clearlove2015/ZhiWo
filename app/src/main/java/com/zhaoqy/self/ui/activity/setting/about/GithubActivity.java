@@ -191,6 +191,12 @@ public class GithubActivity extends BaseActivity {
                  */
                 mWebView.loadUrl("https://github.com/Jude95/EasyRecyclerView");
             }
+            case 20: {
+                /**
+                 * leakcanary 内存泄漏检测库
+                 */
+                mWebView.loadUrl("https://github.com/square/leakcanary");
+            }
         }
 
         mWebView.setWebViewClient(new WebViewClient() {

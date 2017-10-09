@@ -148,7 +148,7 @@
         <item>suspension-fab</item>
         <item>recovery</item>
         <item>EasyRecyclerView</item>
-
+        <item>leakcanary</item>
     </string-array>
 
     <string-array name="recyclerview">

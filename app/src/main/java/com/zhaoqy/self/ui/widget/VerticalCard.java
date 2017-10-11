@@ -125,4 +125,8 @@ public class VerticalCard extends LinearLayout {
     public void setContent(String content) {
         mContent.setText(content);
     }
+
+    public String getContent() {
+        return mContent.getText().toString().trim();
+    }
 }

@@ -30,7 +30,7 @@ import com.zhaoqy.self.ui.animation.FabAlphaAnimate;
 import com.zhaoqy.self.ui.base.BaseToolboxActivity;
 import com.zhaoqy.self.ui.fragment.BookFragment;
 import com.zhaoqy.self.ui.fragment.KnowledgeFragment;
-import com.zhaoqy.self.ui.fragment.TwoFragment;
+import com.zhaoqy.self.ui.fragment.ToolFragment;
 import com.zhaoqy.self.ui.widget.RVPIndicator;
 import com.zhaoqy.self.util.SPUtil;
 
@@ -234,7 +234,7 @@ public class MainActivity extends BaseToolboxActivity implements View.OnClickLis
         mTabContents = new ArrayList<>();
         mTabContents.add(new KnowledgeFragment());
         mTabContents.add(new BookFragment());
-        mTabContents.add(new TwoFragment());
+        mTabContents.add(new ToolFragment());
         mAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public int getCount() {

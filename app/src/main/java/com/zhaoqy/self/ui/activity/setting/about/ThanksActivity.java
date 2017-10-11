@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView;
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.adapter.ThankAdapter;
 import com.zhaoqy.self.ui.base.BaseToolboxActivity;
-import com.zhaoqy.self.ui.widget.recyclerview.decoration.LinearDivider;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -38,6 +37,5 @@ public class ThanksActivity extends BaseToolboxActivity {
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setAdapter(mAdapter);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.addItemDecoration(new LinearDivider(this, LinearLayoutManager.VERTICAL));
     }
 }

@@ -12,10 +12,11 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
     <color name="colorLightGray">#AAAAAA</color>
+    <color name="colorYellow">#fd9c06</color>
+    <color name="colorGrey">#BDBDBD</color>
 
     <!-- 标题栏背景颜色 -->
     <color name="colorBar">#F5F5F5</color>
-
     <color name="colorWindows">#F5F5F5</color>
     <color name="colorNormal">#222222</color>
     <color name="colorHint">#7A7E83</color>

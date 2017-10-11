@@ -65,5 +65,23 @@
     <string name="not_choose_any_pick">你还没有选择任何图片</string>
     <string name="uploading_images">正在批量上传</string>
 
+    <string name="calculator_zero">0</string>
+    <string name="calculator_one">1</string>
+    <string name="calculator_two">2</string>
+    <string name="calculator_three">3</string>
+    <string name="calculator_four">4</string>
+    <string name="calculator_five">5</string>
+    <string name="calculator_six">6</string>
+    <string name="calculator_seven">7</string>
+    <string name="calculator_eight">8</string>
+    <string name="calculator_nine">9</string>
+    <string name="calculator_divide">÷</string>
+    <string name="calculator_multply">×</string>
+    <string name="calculator_add">+</string>
+    <string name="calculator_sub">-</string>
+    <string name="calculator_point">.</string>
+    <string name="calculator_equal">=</string>
+    <string name="calculator_percent">=</string>
+
 
 </resources>

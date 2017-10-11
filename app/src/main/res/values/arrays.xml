@@ -3,7 +3,7 @@
     <string-array name="home_tabs">
         <item>知识积累</item>
         <item>书单</item>
-        <item>发现</item>
+        <item>工具</item>
     </string-array>
 
     <string-array name="book_classify">
@@ -70,6 +70,14 @@
         <item>MVP模式</item>
         <item>相册选择器</item>
         <item>RecyclerView</item>
+    </string-array>
+
+    <string-array name="tool">
+        <item>日历</item>
+        <item>天气</item>
+        <item>手电筒</item>
+        <item>计算器</item>
+        <item>计步器</item>
     </string-array>
 
     <string-array name="thanks">

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.zhy.android.percent.support.PercentLinearLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/activity_award"
+    android:id="@+id/activity_step_history"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWindows"
@@ -22,36 +22,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="感谢"
+            android:text="历史记录"
             android:textColor="@color/colorTitle"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
     </android.support.v7.widget.Toolbar>
 
-    <com.zhy.android.percent.support.PercentLinearLayout
+    <ListView
+        android:id="@+id/listview"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:divider="@null"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorBlack"
-            android:textSize="@dimen/textSize_26"
-            android:padding="20dp"
-            android:text="感谢你们的帮助"/>
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20dp"
-            android:scrollbars="vertical"/>
-
-    </com.zhy.android.percent.support.PercentLinearLayout>
-
-</com.zhy.android.percent.support.PercentLinearLayout>
+</LinearLayout>

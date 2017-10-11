@@ -30,8 +30,6 @@
     <!-- 读取手机状态, 需要某些信息用于网络定位 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
-    <!-- 允许程序挂载和反挂载文件系统可移动存储 -->
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
     <!-- 读取内存卡 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <!-- 写内存卡 -->
@@ -49,6 +47,20 @@
     <uses-permission android:name="android.permission.GET_TASKS"/>
     <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
     <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+    <!-- 计歩 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-feature android:name="android.hardware.sensor.accelerometer"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.sensor.stepdetector"
+        android:required="true"/>
 
     <application
         android:name=".app.SelfApplication"
@@ -218,12 +230,10 @@
             android:name=".ui.activity.main.recyclerview.RecyclerStaggerActivity"
             android:label="瀑布RecyclerView"
             android:theme="@style/BaseTheme"/>
-
         <activity
             android:name=".ui.activity.main.recyclerview.SwipeToDeleteActivity"
             android:label="滑动删除RecyclerView"
             android:theme="@style/BaseTheme"/>
-
         <activity
             android:name=".ui.activity.main.recyclerview.RecyclerDragActivity"
             android:label="拖拽RecyclerView"
@@ -233,10 +243,66 @@
             android:label="书单"
             android:theme="@style/BaseTheme"/>
 
+        <activity
+            android:name=".ui.activity.main.flashlight.FlashLightActivity"
+            android:label="手电筒"
+            android:theme="@style/BaseTheme"/>
+
+        <activity
+            android:name=".ui.activity.main.calculator.CalculatorActivity"
+            android:label="计算器"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.step.StepMainActivity"
+            android:label="计步器"
+            android:launchMode="singleTask"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.step.SetPlanActivity"
+            android:label="设置锻炼计划"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.step.SetpHistoryActivity"
+            android:label="查看历史记录"
+            android:theme="@style/BaseTheme"/>
+
+
+
         <service
             android:name=".service.FloatingBallService"
             android:enabled="true"
             android:exported="true">
+        </service>
+        <service
+            android:name=".ui.activity.main.step.service.StepService"
+            android:priority="1000">
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_TIME_TICK"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".ui.activity.main.step.pedometer.StepsDetectService"
+            android:priority="1000"
+            android:process="com.zhaoqy.self.ui.activity.main.step.pedometer.StepsDetectService">
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_TIME_TICK"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
         </service>
 
 

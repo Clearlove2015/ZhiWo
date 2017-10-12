@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.bean.SingleImageModel;
-import com.zhaoqy.self.util.AlbumBitmapCacheHelper;
+import com.zhaoqy.self.util.BitmapHelper;
 
 import java.util.List;
 
@@ -46,10 +46,10 @@ public class PreviewPageAdapter extends PagerAdapter {
     public Object instantiateItem(ViewGroup container, int position) {
         View view = LayoutInflater.from(context).inflate(R.layout.item_big_image, null);
         final PhotoView photoView = (PhotoView) view.findViewById(R.id.photo_view);
-        AlbumBitmapCacheHelper.getInstance().addPathToShowlist(allimages.get(position).path);
+        BitmapHelper.getInstance().addPathToShowlist(allimages.get(position).path);
         photoView.setTag(allimages.get(position).path);
-        Bitmap bitmap = AlbumBitmapCacheHelper.getInstance().getBitmap(allimages.get(position).path, 0, 0,
-                new AlbumBitmapCacheHelper.ILoadImageCallback() {
+        Bitmap bitmap = BitmapHelper.getInstance().getBitmap(allimages.get(position).path, 0, 0,
+                new BitmapHelper.ILoadImageCallback() {
 
             @Override
             public void onLoadImageCallBack(Bitmap bitmap, String path, Object... objects) {
@@ -70,7 +70,7 @@ public class PreviewPageAdapter extends PagerAdapter {
     public void destroyItem(ViewGroup container, int position, Object object) {
         View view = (View) object;
         container.removeView(view);
-        AlbumBitmapCacheHelper.getInstance().removePathFromShowlist(allimages.get(position).path);
+        BitmapHelper.getInstance().removePathFromShowlist(allimages.get(position).path);
     }
 
     @Override

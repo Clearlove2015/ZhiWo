@@ -52,6 +52,7 @@
     <string name="tip_logining">正在登录中...</string>
     <string name="tip_downloading">正在下载中...</string>
     <string name="tip_setting">正在设置中...</string>
+    <string name="tip_querying">正在查询中...</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

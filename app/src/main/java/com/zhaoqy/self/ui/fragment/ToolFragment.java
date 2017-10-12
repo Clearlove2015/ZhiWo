@@ -9,7 +9,10 @@ import android.widget.Toast;
 
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.activity.main.calculator.CalculatorActivity;
+import com.zhaoqy.self.ui.activity.main.calendar.BasicActivity;
+import com.zhaoqy.self.ui.activity.main.calendar.CalendarActivity;
 import com.zhaoqy.self.ui.activity.main.flashlight.FlashLightActivity;
+import com.zhaoqy.self.ui.activity.main.query.QueryActivity;
 import com.zhaoqy.self.ui.activity.main.step.StepMainActivity;
 import com.zhaoqy.self.ui.adapter.BookAdapter;
 import com.zhaoqy.self.ui.base.BaseFragment;
@@ -54,16 +57,22 @@ public class ToolFragment extends BaseFragment implements BookAdapter.OnItemClic
     public void onItemClick(View view, int position) {
         switch (position) {
             case 0: {
-                //Intent intent = new Intent(getActivity(), BannerMainActivity.class);
-                //startActivity(intent);
+                /**
+                 * 日历
+                 */
+                Intent intent = new Intent(getActivity(), CalendarActivity.class);
+                startActivity(intent);
                 break;
             }
             case 1: {
-                //Intent intent = new Intent(getActivity(), MvpActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(getActivity(), BasicActivity.class);
+                startActivity(intent);
                 break;
             }
             case 2: {
+                /**
+                 * 手电筒
+                 */
                 Intent intent = new Intent(getActivity(), FlashLightActivity.class);
                 startActivity(intent);
                 break;
@@ -81,6 +90,24 @@ public class ToolFragment extends BaseFragment implements BookAdapter.OnItemClic
                  * 计步器
                  */
                 Intent intent = new Intent(getActivity(), StepMainActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case 5: {
+                /**
+                 * 身份证查询
+                 */
+                Intent intent = new Intent(getActivity(), QueryActivity.class);
+                intent.putExtra(QueryActivity.QUERY_STYLE, QueryActivity.QUERY_IDCARD);
+                startActivity(intent);
+                break;
+            }
+            case 6: {
+                /**
+                 * 手机号归属地
+                 */
+                Intent intent = new Intent(getActivity(), QueryActivity.class);
+                intent.putExtra(QueryActivity.QUERY_STYLE, QueryActivity.QUERY_TEL);
                 startActivity(intent);
                 break;
             }

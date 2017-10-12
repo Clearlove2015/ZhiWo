@@ -51,7 +51,9 @@
     <!-- 计歩 -->
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
     <uses-feature android:name="android.hardware.sensor.accelerometer"/>
+
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
 
@@ -169,7 +171,7 @@
         <activity
             android:name=".ui.activity.setting.about.ThanksActivity"
             android:label="致谢"
-            android:theme="@style/BaseTheme"/>
+            android:theme="@style/BaseLinearTheme"/>
         <activity
             android:name=".ui.activity.main.banner.BannerMainActivity"
             android:label="Banner"
@@ -177,19 +179,19 @@
         <activity
             android:name=".ui.activity.main.banner.BannerAnimationActivity"
             android:label="Banner动画预览"
-            android:theme="@style/BaseTheme"/>
+            android:theme="@style/BaseLinearTheme"/>
         <activity
             android:name=".ui.activity.main.banner.BannerStyleActivity"
             android:label="Banner内置样式预览"
-            android:theme="@style/BaseTheme"/>
+            android:theme="@style/BaseLinearTheme"/>
         <activity
             android:name=".ui.activity.main.banner.BannerIndicatorActivity"
             android:label="Banner指示器设置预览"
-            android:theme="@style/BaseTheme"/>
+            android:theme="@style/BaseLinearTheme"/>
         <activity
             android:name=".ui.activity.main.banner.BannerCustomActivity"
             android:label="Banner自定义样式预览"
-            android:theme="@style/BaseTheme"/>
+            android:theme="@style/BaseLinearTheme"/>
         <activity
             android:name=".ui.activity.main.banner.BannerLocalActivity"
             android:label="Banner加载本地图片"
@@ -221,19 +223,19 @@
         <activity
             android:name=".ui.activity.main.recyclerview.RecyclerLinearActivity"
             android:label="线性RecyclerView"
-            android:theme="@style/BaseTheme"/>
+            android:theme="@style/BaseLinearTheme"/>
         <activity
             android:name=".ui.activity.main.recyclerview.RecyclerGridActivity"
             android:label="网格RecyclerView"
-            android:theme="@style/BaseTheme"/>
+            android:theme="@style/BaseGridTheme"/>
         <activity
             android:name=".ui.activity.main.recyclerview.RecyclerStaggerActivity"
             android:label="瀑布RecyclerView"
-            android:theme="@style/BaseTheme"/>
+            android:theme="@style/BaseGridTheme"/>
         <activity
             android:name=".ui.activity.main.recyclerview.SwipeToDeleteActivity"
             android:label="滑动删除RecyclerView"
-            android:theme="@style/BaseTheme"/>
+            android:theme="@style/BaseLinearTheme"/>
         <activity
             android:name=".ui.activity.main.recyclerview.RecyclerDragActivity"
             android:label="拖拽RecyclerView"
@@ -242,12 +244,18 @@
             android:name=".ui.activity.main.BookActivity"
             android:label="书单"
             android:theme="@style/BaseTheme"/>
-
+        <activity
+            android:name=".ui.activity.main.calendar.CalendarActivity"
+            android:label="日历"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.calendar.BasicActivity"
+            android:label="日历2"
+            android:theme="@style/BaseTheme"/>
         <activity
             android:name=".ui.activity.main.flashlight.FlashLightActivity"
             android:label="手电筒"
             android:theme="@style/BaseTheme"/>
-
         <activity
             android:name=".ui.activity.main.calculator.CalculatorActivity"
             android:label="计算器"
@@ -266,7 +274,10 @@
             android:label="查看历史记录"
             android:theme="@style/BaseTheme"/>
 
-
+        <activity
+            android:name=".ui.activity.main.query.QueryActivity"
+            android:label="身份证查询"
+            android:theme="@style/BaseTheme"/>
 
         <service
             android:name=".service.FloatingBallService"

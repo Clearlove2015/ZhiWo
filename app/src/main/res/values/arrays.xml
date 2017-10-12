@@ -78,6 +78,8 @@
         <item>手电筒</item>
         <item>计算器</item>
         <item>计步器</item>
+        <item>身份证查询</item>
+        <item>手机号归属地</item>
     </string-array>
 
     <string-array name="thanks">
@@ -157,6 +159,10 @@
         <item>recovery</item>
         <item>EasyRecyclerView</item>
         <item>leakcanary</item>
+        <item>material-calendarview</item>
+        <item>retrofit</item>
+        <item>rxjava</item>
+        <item>okhttp</item>
     </string-array>
 
     <string-array name="recyclerview">
@@ -177,7 +183,5 @@
         <item>分享好友</item>
         <item>致谢</item>
     </string-array>
-
-
 
 </resources>

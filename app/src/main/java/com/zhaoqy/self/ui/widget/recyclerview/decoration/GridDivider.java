@@ -16,9 +16,7 @@ import android.view.View;
 
 public class GridDivider extends RecyclerView.ItemDecoration {
 
-    private static final int[] ATTRS = new int[] {
-            android.R.attr.listDivider
-    };
+    private static final int[] ATTRS = new int[] { android.R.attr.listDivider };
 
     /**
      * 用于绘制间隔样式

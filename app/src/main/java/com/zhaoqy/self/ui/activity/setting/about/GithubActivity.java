@@ -145,7 +145,7 @@ public class GithubActivity extends BaseActivity {
             }
             case 13: {
                 /**
-                 * EventBus
+                 * EventBus 事件发布/订阅框架
                  */
                 mWebView.loadUrl("https://github.com/greenrobot/EventBus");
                 break;
@@ -196,6 +196,34 @@ public class GithubActivity extends BaseActivity {
                  * leakcanary 内存泄漏检测库
                  */
                 mWebView.loadUrl("https://github.com/square/leakcanary");
+            }
+            case 21: {
+                /**
+                 * material-calendarview 日历控件
+                 */
+                mWebView.loadUrl("https://github.com/prolificinteractive/material-calendarview");
+                break;
+            }
+            case 22: {
+                /**
+                 * retrofit
+                 */
+                mWebView.loadUrl("https://github.com/square/retrofit");
+                break;
+            }
+            case 23: {
+                /**
+                 * rxjava
+                 */
+                mWebView.loadUrl("https://github.com/ReactiveX/RxJava");
+                break;
+            }
+            case 24: {
+                /**
+                 * okhttp
+                 */
+                mWebView.loadUrl("https://github.com/square/okhttp");
+                break;
             }
         }
 

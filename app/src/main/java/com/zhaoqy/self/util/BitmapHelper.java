@@ -27,9 +27,9 @@ import java.util.concurrent.TimeUnit;
  * @since: 2015-06-10
  * Description: 相册页加载图片，省内存，防止oom
  */
-public class AlbumBitmapCacheHelper {
+public class BitmapHelper {
     //线程安全的单例模式
-    private volatile static AlbumBitmapCacheHelper instance = null;
+    private volatile static BitmapHelper instance = null;
     private LruCache<String, Bitmap> cache;
     /**
      * 用来优化图片的展示效果，保存当前显示的图片path
@@ -37,7 +37,7 @@ public class AlbumBitmapCacheHelper {
     private ArrayList<String> currentShowString;
     //    private ContentResolver cr;
 
-    private AlbumBitmapCacheHelper() {
+    private BitmapHelper() {
         //分配1/4的运行时内存给图片显示
         final int memory = (int) (Runtime.getRuntime().maxMemory() / 1024 / 4);
 
@@ -78,11 +78,11 @@ public class AlbumBitmapCacheHelper {
         instance = null;
     }
 
-    public static AlbumBitmapCacheHelper getInstance() {
+    public static BitmapHelper getInstance() {
         if (instance == null) {
-            synchronized (AlbumBitmapCacheHelper.class) {
+            synchronized (BitmapHelper.class) {
                 if (instance == null) {
-                    instance = new AlbumBitmapCacheHelper();
+                    instance = new BitmapHelper();
                 }
             }
         }

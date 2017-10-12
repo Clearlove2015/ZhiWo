@@ -31,7 +31,7 @@ import com.zhaoqy.self.R;
 import com.zhaoqy.self.bean.ImageDirectoryModel;
 import com.zhaoqy.self.bean.SingleImageModel;
 import com.zhaoqy.self.ui.base.BaseToolboxActivity;
-import com.zhaoqy.self.util.AlbumBitmapCacheHelper;
+import com.zhaoqy.self.util.BitmapHelper;
 import com.zhaoqy.self.util.CommonUtil;
 import com.zhaoqy.self.util.DpUtil;
 
@@ -249,7 +249,7 @@ public class AlbumActivity extends BaseToolboxActivity implements View.OnClickLi
                     intent.putExtra(ImagePreviewActivity.EXTRA_LAST_PIC, picNums - currentPicNums);
                     intent.putExtra(ImagePreviewActivity.EXTRA_TOTAL_PIC, picNums);
                     startActivityForResult(intent, CODE_FOR_PIC_BIG_PREVIEW);
-                    AlbumBitmapCacheHelper.getInstance().releaseHalfSizeCache();
+                    BitmapHelper.getInstance().releaseHalfSizeCache();
                 }
                 break;
             }
@@ -258,7 +258,7 @@ public class AlbumActivity extends BaseToolboxActivity implements View.OnClickLi
 
     @Override
     public void onBackPressed() {
-        AlbumBitmapCacheHelper.getInstance().clearCache();
+        BitmapHelper.getInstance().clearCache();
         super.onBackPressed();
     }
 
@@ -369,11 +369,11 @@ public class AlbumActivity extends BaseToolboxActivity implements View.OnClickLi
             //优化显示效果
             if(holder.iv_content.getTag() != null) {
                 String remove = (String) holder.iv_content.getTag();
-                AlbumBitmapCacheHelper.getInstance().removePathFromShowlist(remove);
+                BitmapHelper.getInstance().removePathFromShowlist(remove);
             }
-            AlbumBitmapCacheHelper.getInstance().addPathToShowlist(path);
+            BitmapHelper.getInstance().addPathToShowlist(path);
             holder.iv_content.setTag(path);
-            Bitmap bitmap = AlbumBitmapCacheHelper.getInstance().getBitmap(path, perWidth, perWidth, new AlbumBitmapCacheHelper.ILoadImageCallback() {
+            Bitmap bitmap = BitmapHelper.getInstance().getBitmap(path, perWidth, perWidth, new BitmapHelper.ILoadImageCallback() {
                 @Override
                 public void onLoadImageCallBack(Bitmap bitmap, String path1, Object... objects) {
                     if (bitmap == null) {
@@ -506,7 +506,7 @@ public class AlbumActivity extends BaseToolboxActivity implements View.OnClickLi
                     intent.putExtra(ImagePreviewActivity.EXTRA_LAST_PIC, picNums - currentPicNums);
                     intent.putExtra(ImagePreviewActivity.EXTRA_TOTAL_PIC, picNums);
                     startActivityForResult(intent, CODE_FOR_PIC_BIG);
-                    AlbumBitmapCacheHelper.getInstance().releaseHalfSizeCache();
+                    BitmapHelper.getInstance().releaseHalfSizeCache();
                 }else{
                     picklist.add(getImageDirectoryModelUrlFromMapById(holder.position));
                     currentPicNums++;
@@ -555,7 +555,7 @@ public class AlbumActivity extends BaseToolboxActivity implements View.OnClickLi
         switch (requestCode){
             case CODE_FOR_PIC_BIG:
             case CODE_FOR_PIC_BIG_PREVIEW:
-                AlbumBitmapCacheHelper.getInstance().resizeCache();
+                BitmapHelper.getInstance().resizeCache();
                 if(resultCode == RESULT_OK && data != null) {
                     ArrayList<String> temp = (ArrayList<String>) data.getSerializableExtra("pick_data");
                     //如果返回的list中含该path，但是picklist不含有该path，选中
@@ -621,7 +621,7 @@ public class AlbumActivity extends BaseToolboxActivity implements View.OnClickLi
      * 点击完成按钮之后将图片的地址返回到上一个页面
      */
     private void returnDataAndClose(){
-        AlbumBitmapCacheHelper.getInstance().clearCache();
+        BitmapHelper.getInstance().clearCache();
         if (currentPicNums == 0){
             Toast.makeText(this, getString(R.string.not_choose_any_pick), Toast.LENGTH_SHORT).show();
             return;

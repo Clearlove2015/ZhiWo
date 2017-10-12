@@ -1,9 +1,8 @@
 package com.zhaoqy.self.mvp.presenter;
 
-import com.zhaoqy.self.mvp.Api;
-import com.zhaoqy.self.mvp.GirlApi;
-import com.zhaoqy.self.mvp.view.GirlView;
+import com.zhaoqy.self.api.Network;
 import com.zhaoqy.self.mvp.model.Girl;
+import com.zhaoqy.self.mvp.view.GirlView;
 
 import java.util.List;
 
@@ -29,7 +28,8 @@ public class GirlPresenter extends BasePresenter<GirlView> {
     }
 
     public void getGirlPic(final int page) {
-        GirlApi.createApi(Api.class).getPictures(10, page)
+        Network.getGirlApi()
+                .getPictures(10, page)
                 .subscribeOn(Schedulers.io())
                 .map(new Func1<Girl, List<Girl.ResultsBean>>() {
 

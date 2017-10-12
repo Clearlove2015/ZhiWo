@@ -5,6 +5,8 @@ import android.content.Context;
 import android.util.DisplayMetrics;
 import android.view.View;
 
+import com.zhaoqy.self.app.AppContext;
+
 public class DpUtil {
 
     /**
@@ -35,6 +37,12 @@ public class DpUtil {
      * dp转化成px
      */
     public static int dip2px(Context context, float dpValue) {
+        final float scale = context.getResources().getDisplayMetrics().density;
+        return (int) (dpValue * scale + 0.5f);
+    }
+
+    public static int dip2px(float dpValue) {
+        Context context = AppContext.getContext();
         final float scale = context.getResources().getDisplayMetrics().density;
         return (int) (dpValue * scale + 0.5f);
     }
@@ -74,6 +82,16 @@ public class DpUtil {
         DisplayMetrics metric = new DisplayMetrics();
         ((Activity) context).getWindowManager().getDefaultDisplay().getMetrics(metric);
         return metric.heightPixels;
+    }
+
+    /**
+     * 获得屏幕密度
+     * @return
+     */
+    public static float getScreenDensity() {
+        Context context = AppContext.getContext();
+        DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
+        return displayMetrics.density;
     }
 
     /**

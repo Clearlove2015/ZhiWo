@@ -8,12 +8,13 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.activity.main.calculator.CalculatorActivity;
-import com.zhaoqy.self.ui.activity.main.calendar.CalendarActivity;
-import com.zhaoqy.self.ui.activity.main.flashlight.FlashLightActivity;
-import com.zhaoqy.self.ui.activity.main.query.QueryActivity;
-import com.zhaoqy.self.ui.activity.main.step.StepMainActivity;
-import com.zhaoqy.self.ui.activity.main.weather.WeatherActivity;
+import com.zhaoqy.self.ui.activity.main.tool.calculator.CalculatorActivity;
+import com.zhaoqy.self.ui.activity.main.tool.calendar.CalendarActivity;
+import com.zhaoqy.self.ui.activity.main.tool.flashlight.FlashLightActivity;
+import com.zhaoqy.self.ui.activity.main.tool.imagemanager.ImageManagerActivity;
+import com.zhaoqy.self.ui.activity.main.tool.query.QueryActivity;
+import com.zhaoqy.self.ui.activity.main.tool.step.StepMainActivity;
+import com.zhaoqy.self.ui.activity.main.tool.weather.WeatherActivity;
 import com.zhaoqy.self.ui.adapter.BookAdapter;
 import com.zhaoqy.self.ui.base.BaseFragment;
 
@@ -111,6 +112,18 @@ public class ToolFragment extends BaseFragment implements BookAdapter.OnItemClic
                  */
                 Intent intent = new Intent(getActivity(), QueryActivity.class);
                 intent.putExtra(QueryActivity.QUERY_STYLE, QueryActivity.QUERY_TEL);
+                startActivity(intent);
+                break;
+            }
+            case 7: {
+
+                break;
+            }
+            case 8: {
+                /**
+                 * 图片管理
+                 */
+                Intent intent = new Intent(getActivity(), ImageManagerActivity.class);
                 startActivity(intent);
                 break;
             }

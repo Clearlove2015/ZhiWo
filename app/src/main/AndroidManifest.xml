@@ -245,39 +245,50 @@
             android:label="书单"
             android:theme="@style/BaseTheme"/>
         <activity
-            android:name=".ui.activity.main.calendar.CalendarActivity"
+            android:name=".ui.activity.main.tool.calendar.CalendarActivity"
             android:label="日历"
             android:theme="@style/BaseTheme"/>
-
         <activity
-            android:name=".ui.activity.main.weather.WeatherActivity"
+            android:name=".ui.activity.main.tool.weather.WeatherActivity"
             android:label="天气"
             android:theme="@style/BaseTheme"/>
-
         <activity
-            android:name=".ui.activity.main.flashlight.FlashLightActivity"
+            android:name=".ui.activity.main.tool.flashlight.FlashLightActivity"
             android:label="手电筒"
             android:theme="@style/BaseTheme"/>
         <activity
-            android:name=".ui.activity.main.calculator.CalculatorActivity"
+            android:name=".ui.activity.main.tool.calculator.CalculatorActivity"
             android:label="计算器"
             android:theme="@style/BaseTheme"/>
         <activity
-            android:name=".ui.activity.main.step.StepMainActivity"
+            android:name=".ui.activity.main.tool.step.StepMainActivity"
             android:label="计步器"
             android:launchMode="singleTask"
             android:theme="@style/BaseTheme"/>
         <activity
-            android:name=".ui.activity.main.step.SetPlanActivity"
+            android:name=".ui.activity.main.tool.step.SetPlanActivity"
             android:label="设置锻炼计划"
             android:theme="@style/BaseTheme"/>
         <activity
-            android:name=".ui.activity.main.step.SetpHistoryActivity"
+            android:name=".ui.activity.main.tool.step.SetpHistoryActivity"
             android:label="查看历史记录"
             android:theme="@style/BaseTheme"/>
         <activity
-            android:name=".ui.activity.main.query.QueryActivity"
+            android:name=".ui.activity.main.tool.query.QueryActivity"
             android:label="身份证查询"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.tool.imagemanager.ImageManagerActivity"
+            android:label="图片管理"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.tool.imagemanager.ShowImageActivity"
+            android:label="图片管理详情"
+            android:theme="@style/BaseTheme"/>
+
+        <activity
+            android:name=".ui.activity.main.tool.imagemanager.GalleryActivity"
+            android:label="图片预览"
             android:theme="@style/BaseTheme"/>
 
         <service
@@ -286,7 +297,7 @@
             android:exported="true">
         </service>
         <service
-            android:name=".ui.activity.main.step.service.StepService"
+            android:name=".ui.activity.main.tool.step.service.StepService"
             android:priority="1000">
             <intent-filter>
 
@@ -301,7 +312,7 @@
             </intent-filter>
         </service>
         <service
-            android:name=".ui.activity.main.step.pedometer.StepsDetectService"
+            android:name=".ui.activity.main.tool.step.pedometer.StepsDetectService"
             android:priority="1000"
             android:process="com.zhaoqy.self.ui.activity.main.step.pedometer.StepsDetectService">
             <intent-filter>

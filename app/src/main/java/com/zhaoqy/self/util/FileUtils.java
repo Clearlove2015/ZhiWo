@@ -22,6 +22,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.DecimalFormat;
+import java.math.BigDecimal;
 
 @SuppressWarnings("deprecation")
 public class FileUtils {
@@ -345,6 +346,14 @@ public class FileUtils {
             }
         }
         return size;
+    }
 
+    public static String format(long length) {
+        if (length < 1024) {
+            return "小于1K";
+        } else {
+            BigDecimal b = new BigDecimal(length / (1024 * 1024.0));
+            return b.setScale(2, BigDecimal.ROUND_HALF_UP).floatValue() + "M";
+        }
     }
 }

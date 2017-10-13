@@ -248,10 +248,12 @@
             android:name=".ui.activity.main.calendar.CalendarActivity"
             android:label="日历"
             android:theme="@style/BaseTheme"/>
+
         <activity
-            android:name=".ui.activity.main.calendar.BasicActivity"
-            android:label="日历2"
+            android:name=".ui.activity.main.weather.WeatherActivity"
+            android:label="天气"
             android:theme="@style/BaseTheme"/>
+
         <activity
             android:name=".ui.activity.main.flashlight.FlashLightActivity"
             android:label="手电筒"
@@ -273,7 +275,6 @@
             android:name=".ui.activity.main.step.SetpHistoryActivity"
             android:label="查看历史记录"
             android:theme="@style/BaseTheme"/>
-
         <activity
             android:name=".ui.activity.main.query.QueryActivity"
             android:label="身份证查询"

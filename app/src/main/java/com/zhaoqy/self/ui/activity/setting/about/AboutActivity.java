@@ -58,6 +58,15 @@ public class AboutActivity extends BaseToolboxActivity implements BookAdapter.On
         switch (position) {
             case 0: {
                 /**
+                 * 项目主页
+                 */
+                Intent intent = new Intent(this, GithubActivity.class);
+                intent.putExtra(GithubActivity.GITHUB_KEY, -1);
+                startActivity(intent);
+                break;
+            }
+            case 1: {
+                /**
                  * 检查更新
                  */
                 String str = getResources().getString(
@@ -76,21 +85,21 @@ public class AboutActivity extends BaseToolboxActivity implements BookAdapter.On
                 }, 2500);
                 break;
             }
-            case 1: {
+            case 2: {
                 /**
                  * 功能说明
                  */
                 Toast.makeText(this, "该功能稍后实现", Toast.LENGTH_SHORT).show();
                 break;
             }
-            case 2: {
+            case 3: {
                 /**
                  * 版本说明
                  */
                 Toast.makeText(this, "该功能暂未实现", Toast.LENGTH_SHORT).show();
                 break;
             }
-            case 3: {
+            case 4: {
                 /**
                  * 版权信息
                  */
@@ -98,17 +107,17 @@ public class AboutActivity extends BaseToolboxActivity implements BookAdapter.On
                 startActivity(intent);
                 break;
             }
-            case 4: {
+            case 5: {
                 /**
                  * 去评分
                  */
                 Uri uri = Uri.parse("market://details?id=" + getPackageName());
-                Intent intentpf = new Intent(Intent.ACTION_VIEW,uri);
-                intentpf.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intentpf);
+                Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
                 break;
             }
-            case 5: {
+            case 6: {
                 /**
                  * 打赏
                  */
@@ -116,7 +125,7 @@ public class AboutActivity extends BaseToolboxActivity implements BookAdapter.On
                 startActivity(intent);
                 break;
             }
-            case 6: {
+            case 7: {
                 /**
                  * 分享好友
                  */
@@ -127,7 +136,7 @@ public class AboutActivity extends BaseToolboxActivity implements BookAdapter.On
                 startActivity(intent);
                 break;
             }
-            case 7: {
+            case 8: {
                 /**
                  * 致谢
                  */

@@ -51,7 +51,16 @@ public class GithubActivity extends BaseActivity {
 
     @Override
     protected void initToolbox() {
+
+
         switch (value) {
+            case -1: {
+                /**
+                 * 项目主页
+                 */
+                mWebView.loadUrl("https://github.com/zhaoqingyue/ZhiWo");
+                break;
+            }
             case 0: {
                 /**
                  * butterknife 依赖注入

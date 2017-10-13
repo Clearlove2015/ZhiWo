@@ -9,11 +9,11 @@ import android.widget.Toast;
 
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.activity.main.calculator.CalculatorActivity;
-import com.zhaoqy.self.ui.activity.main.calendar.BasicActivity;
 import com.zhaoqy.self.ui.activity.main.calendar.CalendarActivity;
 import com.zhaoqy.self.ui.activity.main.flashlight.FlashLightActivity;
 import com.zhaoqy.self.ui.activity.main.query.QueryActivity;
 import com.zhaoqy.self.ui.activity.main.step.StepMainActivity;
+import com.zhaoqy.self.ui.activity.main.weather.WeatherActivity;
 import com.zhaoqy.self.ui.adapter.BookAdapter;
 import com.zhaoqy.self.ui.base.BaseFragment;
 
@@ -65,7 +65,10 @@ public class ToolFragment extends BaseFragment implements BookAdapter.OnItemClic
                 break;
             }
             case 1: {
-                Intent intent = new Intent(getActivity(), BasicActivity.class);
+                /**
+                 * 天气
+                 */
+                Intent intent = new Intent(getActivity(), WeatherActivity.class);
                 startActivity(intent);
                 break;
             }

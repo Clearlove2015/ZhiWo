@@ -161,6 +161,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/vertical_card_55"
                 app:vc_hasletter="false"
+                app:vc_content="0.0M"
                 app:vc_title="清除缓存"/>
 
             <com.zhaoqy.self.ui.widget.VerticalCard

@@ -1,6 +1,7 @@
 package com.zhaoqy.self.ui.activity.setting;
 
 import android.content.Intent;
+import android.os.Environment;
 import android.support.v7.widget.SwitchCompat;
 import android.view.View;
 import android.widget.CompoundButton;
@@ -10,10 +11,15 @@ import com.zhaoqy.self.app.AppConst;
 import com.zhaoqy.self.service.FloatingBallService;
 import com.zhaoqy.self.ui.activity.setting.about.AboutActivity;
 import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.widget.VerticalCard;
+import com.zhaoqy.self.util.CacheUtil;
+import com.zhaoqy.self.util.FileUtils;
 import com.zhaoqy.self.util.SPUtil;
 
 import butterknife.BindView;
 import butterknife.OnClick;
+
+import static com.zhaoqy.self.util.FileUtils.getFileSize;
 
 public class SettingActivity extends BaseToolboxActivity implements View.OnClickListener {
 
@@ -21,6 +27,8 @@ public class SettingActivity extends BaseToolboxActivity implements View.OnClick
     SwitchCompat open_guide;
     @BindView(R.id.floating_ball)
     SwitchCompat floating_ball;
+    @BindView(R.id.clear)
+    VerticalCard clear;
 
     @Override
     protected int getLayoutResID() {
@@ -32,6 +40,7 @@ public class SettingActivity extends BaseToolboxActivity implements View.OnClick
         initFirstOpen();
         initFloatingBall();
         setOnCheckedChangeListener();
+        showCacheSize();
     }
 
     @OnClick({R.id.pay, R.id.feedback, R.id.clear, R.id.about})
@@ -57,6 +66,10 @@ public class SettingActivity extends BaseToolboxActivity implements View.OnClick
                 /**
                  * 清除缓存
                  */
+                CacheUtil.cleanInternalCache(this);
+                CacheUtil.cleanExternalCache(this);
+                CacheUtil.cleanFiles(this);
+                showCacheSize();
                 break;
             }
             case R.id.about: {
@@ -111,5 +124,31 @@ public class SettingActivity extends BaseToolboxActivity implements View.OnClick
                 }
             }
         });
+    }
+
+    private void showCacheSize() {
+        long externalCacheSize = 0;
+        long cacheSize = 0;
+        long filesSize = 0;
+        if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
+            try {
+                externalCacheSize = FileUtils.getFileSize(getExternalCacheDir());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        try {
+            cacheSize = getFileSize(SettingActivity.this.getCacheDir());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        try {
+            filesSize = FileUtils.getFileSize(getFilesDir());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        clear.setContent(FileUtils.formetFileSize(externalCacheSize + cacheSize + filesSize));
     }
 }

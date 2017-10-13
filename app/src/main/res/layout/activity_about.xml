@@ -32,14 +32,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="20dp"
-        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:src="@mipmap/logo"
             android:scaleType="centerCrop"/>
 
@@ -47,7 +47,7 @@
             android:id="@+id/vername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:text="版本号：V1.0.0"
             android:textSize="@dimen/textSize_16"
             android:textColor="@color/colorNormal"/>

@@ -1,4 +1,4 @@
-package com.zhaoqy.self.ui.activity.main.album;
+package com.zhaoqy.self.ui.activity.main.knowledge.album;
 
 import android.Manifest;
 import android.app.AlertDialog;

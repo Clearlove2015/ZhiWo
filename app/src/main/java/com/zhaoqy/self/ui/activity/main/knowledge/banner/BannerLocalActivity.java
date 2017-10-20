@@ -1,8 +1,8 @@
-package com.zhaoqy.self.ui.activity.main.banner;
+package com.zhaoqy.self.ui.activity.main.knowledge.banner;
 
 import com.youth.banner.Banner;
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.activity.main.banner.loader.GlideImageLoader;
+import com.zhaoqy.self.ui.activity.main.knowledge.banner.loader.GlideImageLoader;
 import com.zhaoqy.self.ui.base.BaseToolboxActivity;
 
 import java.util.ArrayList;

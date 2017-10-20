@@ -70,6 +70,7 @@
         <item>MVP模式</item>
         <item>相册选择器</item>
         <item>RecyclerView</item>
+        <item>Canvas</item>
     </string-array>
 
     <string-array name="tool">
@@ -85,6 +86,15 @@
         <item>应用管理</item>
         <item>文件管理</item>
         <item>文档管理</item>
+        <item>通话记录</item>
+        <item>联系人</item>
+        <item>信息</item>
+    </string-array>
+
+    <string-array name="contacts">
+        <item>通话记录</item>
+        <item>联系人</item>
+        <item>信息</item>
     </string-array>
 
     <string-array name="thanks">

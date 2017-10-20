@@ -1,4 +1,4 @@
-package com.zhaoqy.self.ui.activity.main.album;
+package com.zhaoqy.self.ui.activity.main.knowledge.album;
 
 import android.content.Intent;
 import android.support.v7.widget.GridLayoutManager;

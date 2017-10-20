@@ -12,7 +12,7 @@ android {
     defaultConfig {
         applicationId "com.zhaoqy.self"
         minSdkVersion 19
-        targetSdkVersion 25
+        targetSdkVersion 21
         versionCode 1
         versionName "1.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -31,79 +31,80 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:cardview-v7:25.3.1'
-    compile 'com.android.support:recyclerview-v7:25.3.1'
-    compile 'com.android.support:support-v4:25.3.1'
-    compile 'com.android.support:design:25.3.1'
     //比例布局
-    compile 'com.zhy:percent-support-extends:1.1.1'
     //依赖注入
-    compile 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     //动态申请权限
-    compile 'com.yanzhenjie:permission:1.1.0'
     //沉浸式管理
-    compile 'com.gyf.barlibrary:barlibrary:2.2.9'
     //圆形imageView
-    compile 'de.hdodenhof:circleimageview:2.1.0'
     //缩放图片PhotoView
-    compile 'com.github.chrisbanes.photoview:library:1.2.4'
     //Picasso加载
-    compile 'com.squareup.picasso:picasso:2.5.2'
     //Glide加载
-    compile 'com.github.bumptech.glide:glide:3.7.0'
     //Fresco加载
-    compile 'com.facebook.fresco:fresco:0.12.0'
     //Gif图片的显示
-    compile 'com.github.Cutta:GifView:1.1'
     //EventBus
-    compile 'org.greenrobot:eventbus:3.0.0'
     //公共dialog
-    compile 'com.github.Othershe:NiceDialog:1.1.1'
     //二维码生成、扫描、识别
-    compile 'com.google.zxing:core:3.3.0'
-    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.8@aar'
-    compile 'cn.bingoogolapple:bga-zxing:1.1.8@aar'
     //通用类集合
-    compile 'com.luffykou:android-common-utils:1.1.3'
     //模糊
-    compile 'jp.wasabeef:blurry:2.1.1'
     //MaterialRatingBar
-    compile 'me.zhanghai.android.materialratingbar:library:1.0.2'
     //悬浮按钮
-    compile 'com.azhon:suspension-fab:1.1.0'
     //图片轮播控件
-    compile 'com.youth.banner:banner:1.4.10'
     //崩溃恢复框架
-    compile 'com.zxy.android:recovery:0.1.4'
     //easyrecyclerview
-    compile 'com.jude:easyrecyclerview:4.4.2'
     //权限
-    compile 'com.github.hotchemi:permissionsdispatcher:2.1.3'
     //内存泄漏检测库
-    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
-    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
     //日历控件
-    compile 'com.prolificinteractive:material-calendarview:1.4.3'
+    
 
     //retrofit2
-    compile 'com.squareup.retrofit2:retrofit:2.0.1'
-    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.1'
-    compile 'com.squareup.retrofit2:converter-gson:2.0.1'
-    compile 'com.google.code.gson:gson:2.6.2'
     //rxjava
-    compile 'io.reactivex:rxjava:1.1.2'
-    compile 'io.reactivex:rxandroid:1.1.0'
     //okhttp
-    compile 'com.squareup.okhttp3:okhttp:3.2.0'
-    compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
-
+    
 
 
     /**
      * jar
      */
     compile files('libs/org.apache.http.legacy.jar')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.zhy:percent-support-extends:1.1.1'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'com.yanzhenjie:permission:1.1.0'
+    compile 'com.gyf.barlibrary:barlibrary:2.2.9'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.facebook.fresco:fresco:0.12.0'
+    compile 'com.github.Cutta:GifView:1.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.Othershe:NiceDialog:1.1.1'
+    compile 'com.google.zxing:core:3.3.0'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.8@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.8@aar'
+    compile 'com.luffykou:android-common-utils:1.1.3'
+    compile 'jp.wasabeef:blurry:2.1.1'
+    compile 'me.zhanghai.android.materialratingbar:library:1.0.2'
+    compile 'com.azhon:suspension-fab:1.1.0'
+    compile 'com.youth.banner:banner:1.4.10'
+    compile 'com.zxy.android:recovery:0.1.4'
+    compile 'com.jude:easyrecyclerview:4.4.2'
+    compile 'com.github.hotchemi:permissionsdispatcher:2.1.3'
+    compile 'com.prolificinteractive:material-calendarview:1.4.3'
+    compile 'com.squareup.retrofit2:retrofit:2.0.1'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.1'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.1'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'io.reactivex:rxjava:1.1.2'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
 }

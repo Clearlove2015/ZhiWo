@@ -1,4 +1,4 @@
-package com.zhaoqy.self.ui.activity.main.banner;
+package com.zhaoqy.self.ui.activity.main.knowledge.banner;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -10,7 +10,7 @@ import android.widget.Toast;
 import com.youth.banner.Banner;
 import com.youth.banner.listener.OnBannerListener;
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.activity.main.banner.loader.GlideImageLoader;
+import com.zhaoqy.self.ui.activity.main.knowledge.banner.loader.GlideImageLoader;
 import com.zhaoqy.self.ui.base.BaseToolboxActivity;
 
 import java.util.ArrayList;

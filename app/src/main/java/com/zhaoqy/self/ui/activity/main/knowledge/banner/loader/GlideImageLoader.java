@@ -1,4 +1,4 @@
-package com.zhaoqy.self.ui.activity.main.banner.loader;
+package com.zhaoqy.self.ui.activity.main.knowledge.banner.loader;
 
 import android.content.Context;
 import android.widget.ImageView;

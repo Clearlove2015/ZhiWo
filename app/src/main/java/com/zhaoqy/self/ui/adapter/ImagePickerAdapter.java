@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.bean.ImageItem;
-import com.zhaoqy.self.ui.activity.main.album.ImagePickerActivity;
+import com.zhaoqy.self.ui.activity.main.knowledge.album.ImagePickerActivity;
 
 import java.util.ArrayList;
 import java.util.List;

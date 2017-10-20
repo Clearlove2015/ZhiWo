@@ -17,6 +17,7 @@
     <!-- 访问网络的变化, 需要某些信息用于网络定位 -->
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
 
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
     <!-- 读联系人权限 -->
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <!-- 写联系人权限 -->
@@ -27,6 +28,9 @@
     <uses-permission android:name="android.permission.READ_SMS"/>
     <!-- 获取通讯录 -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
     <!-- 读取手机状态, 需要某些信息用于网络定位 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
@@ -63,6 +67,7 @@
     <uses-feature
         android:name="android.hardware.sensor.stepdetector"
         android:required="true"/>
+
 
     <application
         android:name=".app.SelfApplication"
@@ -173,72 +178,76 @@
             android:label="致谢"
             android:theme="@style/BaseLinearTheme"/>
         <activity
-            android:name=".ui.activity.main.banner.BannerMainActivity"
+            android:name=".ui.activity.main.knowledge.banner.BannerMainActivity"
             android:label="Banner"
             android:theme="@style/BaseTheme"/>
         <activity
-            android:name=".ui.activity.main.banner.BannerAnimationActivity"
+            android:name=".ui.activity.main.knowledge.banner.BannerAnimationActivity"
             android:label="Banner动画预览"
             android:theme="@style/BaseLinearTheme"/>
         <activity
-            android:name=".ui.activity.main.banner.BannerStyleActivity"
+            android:name=".ui.activity.main.knowledge.banner.BannerStyleActivity"
             android:label="Banner内置样式预览"
             android:theme="@style/BaseLinearTheme"/>
         <activity
-            android:name=".ui.activity.main.banner.BannerIndicatorActivity"
+            android:name=".ui.activity.main.knowledge.banner.BannerIndicatorActivity"
             android:label="Banner指示器设置预览"
             android:theme="@style/BaseLinearTheme"/>
         <activity
-            android:name=".ui.activity.main.banner.BannerCustomActivity"
+            android:name=".ui.activity.main.knowledge.banner.BannerCustomActivity"
             android:label="Banner自定义样式预览"
             android:theme="@style/BaseLinearTheme"/>
         <activity
-            android:name=".ui.activity.main.banner.BannerLocalActivity"
+            android:name=".ui.activity.main.knowledge.banner.BannerLocalActivity"
             android:label="Banner加载本地图片"
             android:theme="@style/BaseTheme"/>
         <activity
-            android:name=".ui.activity.main.mvp.MvpActivity"
+            android:name=".ui.activity.main.knowledge.mvp.MvpActivity"
             android:label="MVP模式-妹子"
             android:theme="@style/BaseTheme"/>
         <activity
-            android:name=".ui.activity.main.mvp.ImageDetailActivity"
+            android:name=".ui.activity.main.knowledge.mvp.ImageDetailActivity"
             android:label="MVP模式-图片详情"
             android:theme="@style/BaseTheme"/>
         <activity
-            android:name=".ui.activity.main.album.ImagePickerActivity"
+            android:name=".ui.activity.main.knowledge.album.ImagePickerActivity"
             android:label="相册选择器"
             android:theme="@style/BaseTheme"/>
         <activity
-            android:name=".ui.activity.main.album.AlbumActivity"
+            android:name=".ui.activity.main.knowledge.album.AlbumActivity"
             android:label="选择图片"
             android:theme="@style/BaseTheme"/>
         <activity
-            android:name=".ui.activity.main.album.ImagePreviewActivity"
+            android:name=".ui.activity.main.knowledge.album.ImagePreviewActivity"
             android:label="图片预览"
             android:theme="@style/BaseTheme"/>
         <activity
-            android:name=".ui.activity.main.recyclerview.RecyclerViewActivity"
+            android:name=".ui.activity.main.knowledge.recyclerview.RecyclerViewActivity"
             android:label="RecyclerView"
             android:theme="@style/BaseTheme"/>
         <activity
-            android:name=".ui.activity.main.recyclerview.RecyclerLinearActivity"
+            android:name=".ui.activity.main.knowledge.recyclerview.RecyclerLinearActivity"
             android:label="线性RecyclerView"
             android:theme="@style/BaseLinearTheme"/>
         <activity
-            android:name=".ui.activity.main.recyclerview.RecyclerGridActivity"
+            android:name=".ui.activity.main.knowledge.recyclerview.RecyclerGridActivity"
             android:label="网格RecyclerView"
             android:theme="@style/BaseGridTheme"/>
         <activity
-            android:name=".ui.activity.main.recyclerview.RecyclerStaggerActivity"
+            android:name=".ui.activity.main.knowledge.recyclerview.RecyclerStaggerActivity"
             android:label="瀑布RecyclerView"
             android:theme="@style/BaseGridTheme"/>
         <activity
-            android:name=".ui.activity.main.recyclerview.SwipeToDeleteActivity"
+            android:name=".ui.activity.main.knowledge.recyclerview.SwipeToDeleteActivity"
             android:label="滑动删除RecyclerView"
             android:theme="@style/BaseLinearTheme"/>
         <activity
-            android:name=".ui.activity.main.recyclerview.RecyclerDragActivity"
+            android:name=".ui.activity.main.knowledge.recyclerview.RecyclerDragActivity"
             android:label="拖拽RecyclerView"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.knowledge.canvas.CanvasActivity"
+            android:label="Canvas总结"
             android:theme="@style/BaseTheme"/>
         <activity
             android:name=".ui.activity.main.BookActivity"
@@ -285,10 +294,14 @@
             android:name=".ui.activity.main.tool.imagemanager.ShowImageActivity"
             android:label="图片管理详情"
             android:theme="@style/BaseTheme"/>
-
         <activity
             android:name=".ui.activity.main.tool.imagemanager.GalleryActivity"
             android:label="图片预览"
+            android:theme="@style/BaseTheme"/>
+
+        <activity
+            android:name=".ui.activity.main.tool.contacts.ContactsActivity"
+            android:label="通讯录"
             android:theme="@style/BaseTheme"/>
 
         <service

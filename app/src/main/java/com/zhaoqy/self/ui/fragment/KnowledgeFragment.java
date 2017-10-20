@@ -8,10 +8,11 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.activity.main.album.AlbumActivity;
-import com.zhaoqy.self.ui.activity.main.banner.BannerMainActivity;
-import com.zhaoqy.self.ui.activity.main.mvp.MvpActivity;
-import com.zhaoqy.self.ui.activity.main.recyclerview.RecyclerViewActivity;
+import com.zhaoqy.self.ui.activity.main.knowledge.album.AlbumActivity;
+import com.zhaoqy.self.ui.activity.main.knowledge.banner.BannerMainActivity;
+import com.zhaoqy.self.ui.activity.main.knowledge.canvas.CanvasActivity;
+import com.zhaoqy.self.ui.activity.main.knowledge.mvp.MvpActivity;
+import com.zhaoqy.self.ui.activity.main.knowledge.recyclerview.RecyclerViewActivity;
 import com.zhaoqy.self.ui.adapter.BookAdapter;
 import com.zhaoqy.self.ui.base.BaseFragment;
 
@@ -73,6 +74,11 @@ public class KnowledgeFragment extends BaseFragment implements BookAdapter.OnIte
             }
             case 3: {
                 Intent intent = new Intent(getActivity(), RecyclerViewActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case 4: {
+                Intent intent = new Intent(getActivity(), CanvasActivity.class);
                 startActivity(intent);
                 break;
             }

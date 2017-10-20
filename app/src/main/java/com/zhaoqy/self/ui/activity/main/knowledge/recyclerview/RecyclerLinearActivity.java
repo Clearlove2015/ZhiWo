@@ -1,4 +1,4 @@
-package com.zhaoqy.self.ui.activity.main.recyclerview;
+package com.zhaoqy.self.ui.activity.main.knowledge.recyclerview;
 
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;

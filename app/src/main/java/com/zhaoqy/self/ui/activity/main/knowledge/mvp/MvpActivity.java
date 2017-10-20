@@ -1,4 +1,4 @@
-package com.zhaoqy.self.ui.activity.main.mvp;
+package com.zhaoqy.self.ui.activity.main.knowledge.mvp;
 
 import android.content.Intent;
 import android.os.Bundle;

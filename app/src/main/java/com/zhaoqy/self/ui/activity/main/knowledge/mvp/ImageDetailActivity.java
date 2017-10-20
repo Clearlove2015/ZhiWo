@@ -1,4 +1,4 @@
-package com.zhaoqy.self.ui.activity.main.mvp;
+package com.zhaoqy.self.ui.activity.main.knowledge.mvp;
 
 import android.app.WallpaperManager;
 import android.content.Context;

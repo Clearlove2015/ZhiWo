@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.activity.main.tool.calculator.CalculatorActivity;
 import com.zhaoqy.self.ui.activity.main.tool.calendar.CalendarActivity;
+import com.zhaoqy.self.ui.activity.main.tool.contacts.ContactsActivity;
 import com.zhaoqy.self.ui.activity.main.tool.flashlight.FlashLightActivity;
 import com.zhaoqy.self.ui.activity.main.tool.imagemanager.ImageManagerActivity;
 import com.zhaoqy.self.ui.activity.main.tool.query.QueryActivity;
@@ -124,6 +125,45 @@ public class ToolFragment extends BaseFragment implements BookAdapter.OnItemClic
                  * 图片管理
                  */
                 Intent intent = new Intent(getActivity(), ImageManagerActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case 9: {
+
+                break;
+            }
+            case 10: {
+
+                break;
+            }
+            case 11: {
+
+                break;
+            }
+            case 12: {
+                /**
+                 * 通话记录
+                 */
+                Intent intent = new Intent(getActivity(), ContactsActivity.class);
+                intent.putExtra("contact_type", 0);
+                startActivity(intent);
+                break;
+            }
+            case 13: {
+                /**
+                 * 联系人
+                 */
+                Intent intent = new Intent(getActivity(), ContactsActivity.class);
+                intent.putExtra("contact_type", 1);
+                startActivity(intent);
+                break;
+            }
+            case 14: {
+                /**
+                 * 信息
+                 */
+                Intent intent = new Intent(getActivity(), ContactsActivity.class);
+                intent.putExtra("contact_type", 2);
                 startActivity(intent);
                 break;
             }

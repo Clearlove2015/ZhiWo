@@ -16,8 +16,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <!-- 访问网络的变化, 需要某些信息用于网络定位 -->
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
-
-    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
     <!-- 读联系人权限 -->
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <!-- 写联系人权限 -->
@@ -28,9 +27,9 @@
     <uses-permission android:name="android.permission.READ_SMS"/>
     <!-- 获取通讯录 -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
-    <uses-permission android:name="android.permission.SEND_SMS" />
-    <uses-permission android:name="android.permission.WRITE_SMS" />
-    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
     <!-- 读取手机状态, 需要某些信息用于网络定位 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
@@ -68,7 +67,6 @@
         android:name="android.hardware.sensor.stepdetector"
         android:required="true"/>
 
-
     <application
         android:name=".app.SelfApplication"
         android:allowBackup="true"
@@ -78,6 +76,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ui.activity.start.SplashActivity"
+            android:label="闪屏页"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -161,10 +160,18 @@
             android:name=".ui.activity.setting.about.AboutActivity"
             android:label="关于"
             android:theme="@style/BaseTheme"/>
+
+        <activity
+            android:name=".ui.activity.setting.about.FeaturesActivity"
+            android:label="功能介绍"
+            android:theme="@style/BaseTheme"/>
+
         <activity
             android:name=".ui.activity.setting.about.CopyrightActivity"
             android:label="版权信息"
             android:theme="@style/BaseTheme"/>
+
+
         <activity
             android:name=".ui.activity.setting.about.GithubActivity"
             android:label="Github"
@@ -298,7 +305,6 @@
             android:name=".ui.activity.main.tool.imagemanager.GalleryActivity"
             android:label="图片预览"
             android:theme="@style/BaseTheme"/>
-
         <activity
             android:name=".ui.activity.main.tool.contacts.ContactsActivity"
             android:label="通讯录"

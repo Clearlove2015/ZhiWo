@@ -87,9 +87,15 @@ public class AboutActivity extends BaseToolboxActivity implements BookAdapter.On
             }
             case 2: {
                 /**
-                 * 功能说明
+                 * 功能介绍
                  */
-                Toast.makeText(this, "该功能稍后实现", Toast.LENGTH_SHORT).show();
+                boolean complete = true;
+                if (complete) {
+                    Intent intent = new Intent(this, FeaturesActivity.class);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(this, "该功能稍后实现", Toast.LENGTH_SHORT).show();
+                }
                 break;
             }
             case 3: {

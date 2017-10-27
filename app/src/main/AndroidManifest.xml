@@ -76,7 +76,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ui.activity.start.SplashActivity"
-            android:label="闪屏页"
+            android:label="@string/app_name"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

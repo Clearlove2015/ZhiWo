@@ -1,6 +1,5 @@
 package com.zhaoqy.self.ui.activity.setting.about;
 
-import android.util.Log;
 import android.widget.TextView;
 
 import com.zhaoqy.self.R;
@@ -22,7 +21,6 @@ public class FeaturesActivity extends BaseToolboxActivity {
     @Override
     protected void initData() {
         String text = FileUtils.getFromAssets(this, "func.txt");
-        Log.e("zhaoqy", "text: " + text);
         features.setText(text);
     }
 }

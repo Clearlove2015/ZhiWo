@@ -11,6 +11,7 @@ import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.activity.main.knowledge.album.AlbumActivity;
 import com.zhaoqy.self.ui.activity.main.knowledge.banner.BannerMainActivity;
 import com.zhaoqy.self.ui.activity.main.knowledge.canvas.CanvasActivity;
+import com.zhaoqy.self.ui.activity.main.knowledge.chart.ChartMainActivity;
 import com.zhaoqy.self.ui.activity.main.knowledge.mvp.MvpActivity;
 import com.zhaoqy.self.ui.activity.main.knowledge.recyclerview.RecyclerViewActivity;
 import com.zhaoqy.self.ui.adapter.BookAdapter;
@@ -57,27 +58,50 @@ public class KnowledgeFragment extends BaseFragment implements BookAdapter.OnIte
     public void onItemClick(View view, int position) {
         switch (position) {
             case 0: {
+                /**
+                 * Banner图片轮播
+                 */
                 Intent intent = new Intent(getActivity(), BannerMainActivity.class);
                 startActivity(intent);
                 break;
             }
             case 1: {
+                /**
+                 * MVP模式
+                 */
                 Intent intent = new Intent(getActivity(), MvpActivity.class);
                 startActivity(intent);
                 break;
             }
             case 2: {
+                /**
+                 * 相册选择器
+                 */
                 //Intent intent = new Intent(getActivity(), ImagePickerActivity.class);
                 Intent intent = new Intent(getActivity(), AlbumActivity.class);
                 startActivity(intent);
                 break;
             }
             case 3: {
+                /**
+                 * RecyclerView
+                 */
                 Intent intent = new Intent(getActivity(), RecyclerViewActivity.class);
                 startActivity(intent);
                 break;
             }
             case 4: {
+                /**
+                 * Chart图表
+                 */
+                Intent intent = new Intent(getActivity(), ChartMainActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case 5: {
+                /**
+                 * Canvas
+                 */
                 Intent intent = new Intent(getActivity(), CanvasActivity.class);
                 startActivity(intent);
                 break;

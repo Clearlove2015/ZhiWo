@@ -70,6 +70,7 @@
         <item>MVP模式</item>
         <item>相册选择器</item>
         <item>RecyclerView</item>
+        <item>Chart图表</item>
         <item>Canvas</item>
     </string-array>
 
@@ -186,6 +187,15 @@
         <item>瀑布布局</item>
         <item>滑动删除</item>
         <item>拖动切换位置</item>
+    </string-array>
+
+    <string-array name="chart">
+        <item>曲线图</item>
+        <item>柱状图</item>
+        <item>折线图</item>
+        <item>组合图</item>
+        <item>饼状图</item>
+        <item>雷达图</item>
     </string-array>
 
     <string-array name="about">

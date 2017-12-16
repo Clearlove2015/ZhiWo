@@ -160,18 +160,14 @@
             android:name=".ui.activity.setting.about.AboutActivity"
             android:label="关于"
             android:theme="@style/BaseTheme"/>
-
         <activity
             android:name=".ui.activity.setting.about.FeaturesActivity"
             android:label="功能介绍"
             android:theme="@style/BaseTheme"/>
-
         <activity
             android:name=".ui.activity.setting.about.CopyrightActivity"
             android:label="版权信息"
             android:theme="@style/BaseTheme"/>
-
-
         <activity
             android:name=".ui.activity.setting.about.GithubActivity"
             android:label="Github"
@@ -251,6 +247,35 @@
         <activity
             android:name=".ui.activity.main.knowledge.recyclerview.RecyclerDragActivity"
             android:label="拖拽RecyclerView"
+            android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.knowledge.chart.ChartMainActivity"
+            android:label="Chart图表"
+            android:theme="@style/BaseTheme"/>
+
+        <activity
+            android:name=".ui.activity.main.knowledge.chart.ChartCurveActivity"
+            android:label="曲线图表"
+            android:theme="@style/BaseTheme"/>
+
+        <activity
+            android:name=".ui.activity.main.knowledge.chart.ChartBarActivity"
+            android:label="柱状图表"
+            android:theme="@style/BaseTheme"/>
+
+        <activity
+            android:name=".ui.activity.main.knowledge.chart.ChartPolylineActivity"
+            android:label="折线图表"
+            android:theme="@style/BaseTheme"/>
+
+        <activity
+            android:name=".ui.activity.main.knowledge.chart.ChartPieActivity"
+            android:label="饼状图表"
+            android:theme="@style/BaseTheme"/>
+
+        <activity
+            android:name=".ui.activity.main.knowledge.chart.ChartRadarActivity"
+            android:label="雷达图表"
             android:theme="@style/BaseTheme"/>
         <activity
             android:name=".ui.activity.main.knowledge.canvas.CanvasActivity"

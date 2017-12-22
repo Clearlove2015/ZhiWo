@@ -26,7 +26,6 @@ public class SelfApplication extends Application {
         AppContext.setContext(getApplicationContext());
         SPUtil.init(this);
         FileUtils.initFile();
-
         /**
          * 初始化内存泄漏检测库
          */

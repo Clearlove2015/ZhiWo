@@ -47,16 +47,25 @@ public class ChartMainActivity extends BaseToolboxActivity implements BookAdapte
     public void onItemClick(View view, int position) {
         switch (position) {
             case 0: {
+                /**
+                 * 曲线图
+                 */
                 Intent intent = new Intent(this, ChartCurveActivity.class);
                 startActivity(intent);
                 break;
             }
             case 1: {
+                /**
+                 * 饼状图
+                 */
                 Intent intent = new Intent(this, ChartBarActivity.class);
                 startActivity(intent);
                 break;
             }
             case 2: {
+                /**
+                 * 折线图
+                 */
                 Intent intent = new Intent(this, ChartPolylineActivity.class);
                 startActivity(intent);
                 break;
@@ -67,11 +76,17 @@ public class ChartMainActivity extends BaseToolboxActivity implements BookAdapte
                 break;
             }
             case 4: {
+                /**
+                 * 饼状图
+                 */
                 Intent intent = new Intent(this, ChartPieActivity.class);
                 startActivity(intent);
                 break;
             }
             case 5: {
+                /**
+                 * 雷达图
+                 */
                 Intent intent = new Intent(this, ChartRadarActivity.class);
                 startActivity(intent);
                 break;

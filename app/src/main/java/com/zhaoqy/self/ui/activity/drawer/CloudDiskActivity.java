@@ -3,11 +3,11 @@ package com.zhaoqy.self.ui.activity.drawer;
 import android.view.View;
 
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import butterknife.OnClick;
 
-public class CloudDiskActivity extends BaseToolboxActivity implements View.OnClickListener {
+public class CloudDiskActivity extends BaseBarActivity implements View.OnClickListener {
 
     @Override
     protected int getLayoutResID() {

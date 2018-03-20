@@ -7,7 +7,7 @@ import com.idtk.smallchart.chart.BarChart;
 import com.idtk.smallchart.data.BarData;
 import com.idtk.smallchart.interfaces.iData.IBarData;
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.util.DpUtil;
 
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ import butterknife.BindView;
 /**
  * 柱状图
  */
-public class ChartBarActivity extends BaseToolboxActivity {
+public class ChartBarActivity extends BaseBarActivity {
 
     @BindView(R.id.barChart)
     BarChart barChart;

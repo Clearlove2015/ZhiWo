@@ -9,7 +9,7 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.adapter.recycler.SwipeAdapter;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.ui.widget.recyclerview.decoration.LinearDivider;
 
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ import java.util.List;
 
 import butterknife.BindView;
 
-public class SwipeToDeleteActivity extends BaseToolboxActivity {
+public class SwipeToDeleteActivity extends BaseBarActivity {
 
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;

@@ -9,13 +9,13 @@ import android.view.View;
 
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.activity.main.tool.step.service.StepService;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.util.SPUtil;
 
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class StepMainActivity extends BaseToolboxActivity  implements View.OnClickListener{
+public class StepMainActivity extends BaseBarActivity implements View.OnClickListener{
 
     @BindView(R.id.stepArcView)
     StepArcView stepArcView;

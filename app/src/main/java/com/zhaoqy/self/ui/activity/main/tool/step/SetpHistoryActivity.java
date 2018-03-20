@@ -11,13 +11,13 @@ import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.activity.main.tool.step.adapter.CommonAdapter;
 import com.zhaoqy.self.ui.activity.main.tool.step.adapter.CommonViewHolder;
 import com.zhaoqy.self.ui.activity.main.tool.step.utils.DbUtils;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import java.util.List;
 
 import butterknife.BindView;
 
-public class SetpHistoryActivity extends BaseToolboxActivity {
+public class SetpHistoryActivity extends BaseBarActivity {
 
     @BindView(R.id.listview)
     ListView listview;

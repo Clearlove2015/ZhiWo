@@ -12,7 +12,7 @@ import com.youth.banner.listener.OnBannerListener;
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.activity.main.knowledge.banner.loader.GlideImageLoader;
 import com.zhaoqy.self.ui.adapter.BannerAdapter;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.ui.widget.recyclerview.decoration.LinearDivider;
 
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ import java.util.List;
 
 import butterknife.BindView;
 
-public class BannerStyleActivity extends BaseToolboxActivity implements OnBannerListener, BannerAdapter.OnItemClickListener {
+public class BannerStyleActivity extends BaseBarActivity implements OnBannerListener, BannerAdapter.OnItemClickListener {
 
     @BindView(R.id.banner)
     Banner banner;

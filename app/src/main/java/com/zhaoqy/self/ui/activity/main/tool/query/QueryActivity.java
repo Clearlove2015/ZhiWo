@@ -14,7 +14,7 @@ import com.zhaoqy.self.R;
 import com.zhaoqy.self.api.Network;
 import com.zhaoqy.self.bean.query.QueryIDCard;
 import com.zhaoqy.self.bean.query.QueryTel;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.ui.dialog.ProgressDialog;
 
 import butterknife.BindView;
@@ -24,7 +24,7 @@ import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
-public class QueryActivity extends BaseToolboxActivity implements View.OnClickListener {
+public class QueryActivity extends BaseBarActivity implements View.OnClickListener {
 
     public static final String QUERY_IDCARD_KEY = "220f329adbf071c81b4b3011e0439cad";
     public static final String QUERY_TEL_KEY = "576f995fdbc2c0e9db5fa785da34efd6";

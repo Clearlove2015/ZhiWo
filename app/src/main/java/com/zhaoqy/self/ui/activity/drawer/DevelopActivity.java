@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.view.View;
 
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import butterknife.OnClick;
 
@@ -14,7 +14,7 @@ import butterknife.OnClick;
  * android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
  * 设置完后，Toolbar的导航返回按钮变成白色
  */
-public class DevelopActivity extends BaseToolboxActivity implements View.OnClickListener{
+public class DevelopActivity extends BaseBarActivity implements View.OnClickListener{
 
     @Override
     protected int getLayoutResID() {

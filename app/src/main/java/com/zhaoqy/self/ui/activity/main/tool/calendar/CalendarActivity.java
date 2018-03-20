@@ -20,7 +20,7 @@ import com.zhaoqy.self.ui.activity.main.tool.calendar.decorator.LunarDecorator;
 import com.zhaoqy.self.ui.activity.main.tool.calendar.decorator.TodayDecorator;
 import com.zhaoqy.self.ui.activity.main.tool.calendar.utils.DateUtils;
 import com.zhaoqy.self.ui.activity.main.tool.calendar.utils.Lunar;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -28,7 +28,7 @@ import java.util.Date;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class CalendarActivity extends BaseToolboxActivity implements OnDateSelectedListener, OnMonthChangedListener {
+public class CalendarActivity extends BaseBarActivity implements OnDateSelectedListener, OnMonthChangedListener {
 
     @BindView(R.id.calendarView_calendar)
     MaterialCalendarView widget;

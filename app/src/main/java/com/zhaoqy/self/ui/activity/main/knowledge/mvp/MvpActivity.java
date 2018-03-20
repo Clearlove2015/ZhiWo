@@ -16,13 +16,13 @@ import com.zhaoqy.self.mvp.model.Girl;
 import com.zhaoqy.self.mvp.presenter.GirlPresenter;
 import com.zhaoqy.self.mvp.view.GirlView;
 import com.zhaoqy.self.ui.adapter.GirlAdapter;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import java.util.List;
 
 import butterknife.BindView;
 
-public class MvpActivity extends BaseToolboxActivity implements GirlView, SwipeRefreshLayout.OnRefreshListener, RecyclerArrayAdapter.OnItemClickListener {
+public class MvpActivity extends BaseBarActivity implements GirlView, SwipeRefreshLayout.OnRefreshListener, RecyclerArrayAdapter.OnItemClickListener {
 
     @BindView(R.id.mvp)
     LinearLayout mvp;

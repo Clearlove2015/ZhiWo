@@ -9,14 +9,14 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.adapter.recycler.DragAdapter;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 
-public class RecyclerDragActivity extends BaseToolboxActivity {
+public class RecyclerDragActivity extends BaseBarActivity {
 
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;

@@ -2,12 +2,12 @@ package com.zhaoqy.self.ui.activity.info;
 
 import com.bumptech.glide.Glide;
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import butterknife.BindView;
 import uk.co.senab.photoview.PhotoView;
 
-public class BigImageActivity extends BaseToolboxActivity {
+public class BigImageActivity extends BaseBarActivity {
 
     @BindView(R.id.photo_view)
     PhotoView photoView;

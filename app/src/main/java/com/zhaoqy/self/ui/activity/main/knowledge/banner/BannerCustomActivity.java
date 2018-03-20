@@ -4,14 +4,14 @@ import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.activity.main.knowledge.banner.loader.GlideImageLoader;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import java.util.Arrays;
 import java.util.List;
 
 import butterknife.BindView;
 
-public class BannerCustomActivity extends BaseToolboxActivity {
+public class BannerCustomActivity extends BaseBarActivity {
 
     @BindView(R.id.banner1)
     Banner banner1;

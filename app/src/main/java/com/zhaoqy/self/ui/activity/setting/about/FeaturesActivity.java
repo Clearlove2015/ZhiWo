@@ -3,12 +3,12 @@ package com.zhaoqy.self.ui.activity.setting.about;
 import android.widget.TextView;
 
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.util.FileUtils;
 
 import butterknife.BindView;
 
-public class FeaturesActivity extends BaseToolboxActivity {
+public class FeaturesActivity extends BaseBarActivity {
 
     @BindView(R.id.features_text)
     TextView features;

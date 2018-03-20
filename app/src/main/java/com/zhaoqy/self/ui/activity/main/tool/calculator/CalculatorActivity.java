@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.activity.main.tool.calculator.InputItem.InputType;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class CalculatorActivity extends BaseToolboxActivity implements View.OnClickListener {
+public class CalculatorActivity extends BaseBarActivity implements View.OnClickListener {
 
     public static final int INPUT_NUMBER = 1;
     public static final int INPUT_POINT = 0;

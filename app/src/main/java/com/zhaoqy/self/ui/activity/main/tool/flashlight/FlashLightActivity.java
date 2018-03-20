@@ -16,7 +16,7 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -26,7 +26,7 @@ import permissions.dispatcher.OnPermissionDenied;
 import permissions.dispatcher.OnShowRationale;
 import permissions.dispatcher.PermissionRequest;
 
-public class FlashLightActivity extends BaseToolboxActivity implements View.OnClickListener{
+public class FlashLightActivity extends BaseBarActivity implements View.OnClickListener{
 
     @BindView(R.id.root)
     RelativeLayout root;

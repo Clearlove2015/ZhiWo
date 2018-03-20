@@ -9,13 +9,13 @@ import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import butterknife.BindView;
 
 import static android.view.KeyEvent.KEYCODE_BACK;
 
-public class WebViewActivity extends BaseToolboxActivity {
+public class WebViewActivity extends BaseBarActivity {
 
     public static final String WEB_KEY = "web_key";
     public static final int WEB_GITHUB = 0;

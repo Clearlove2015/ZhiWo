@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_span"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindows"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title=""
+        app:titleTextColor="@android:color/white">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SpannableString"
+            android:textColor="@color/colorTitle"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWindows"
+        android:scrollbarSize="6sp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="1. ForegroundColorSpan + RelativeSizeSpan + StyleSpan"
+                android:textColor="@color/colorHint"
+                android:textSize="16sp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/text01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="科比身穿24号球衣"
+                android:textColor="#727272"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="2. ForegroundColorSpan"
+                android:textColor="@color/colorHint"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="设置文字的前景色为淡蓝色"
+                android:textColor="#727272"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="3. BackgroundColorSpan"
+                android:textColor="@color/colorHint"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="设置文字的背景色为淡绿色"
+                android:textColor="#727272"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="4. RelativeSizeSpan"
+                android:textColor="@color/colorHint"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="万丈高楼平地起"
+                android:textColor="#727272"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="5. StrikethroughSpan"
+                android:textColor="@color/colorHint"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="为文字设置删除线"
+                android:textColor="#727272"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="6. UnderlineSpan"
+                android:textColor="@color/colorHint"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="为文字设置下划线"
+                android:textColor="#727272"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="7. SuperscriptSpan"
+                android:textColor="@color/colorHint"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="为文字设置上标"
+                android:textColor="#727272"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="8. SubscriptSpan"
+                android:textColor="@color/colorHint"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="为文字设置下标"
+                android:textColor="#727272"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="9. StyleSpan"
+                android:textColor="@color/colorHint"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text09"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="为文字设置粗体、斜体风格"
+                android:textColor="#727272"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="10. ImageSpan"
+                android:textColor="@color/colorHint"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="在文本中添加表情（表情）"
+                android:textColor="#727272"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="11. DynamicDrawableSpan"
+                android:textColor="@color/colorHint"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="设置图片"
+                android:textColor="#727272"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="12. ClickableSpan"
+                android:textColor="@color/colorHint"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="为文字设置点击事件"
+                android:textColor="#727272"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="13. URLSpan"
+                android:textColor="@color/colorHint"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="为文字设置超链接"
+                android:textColor="#727272"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="14. ScaleXSpan"
+                android:textColor="@color/colorHint"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="基于x轴缩放"
+                android:textColor="#727272"
+                android:textSize="18sp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

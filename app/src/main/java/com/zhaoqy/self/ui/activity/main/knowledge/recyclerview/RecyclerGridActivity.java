@@ -6,7 +6,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.adapter.recycler.RecyclerAdapter;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.ui.widget.recyclerview.decoration.GridDivider;
 
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ import java.util.List;
 
 import butterknife.BindView;
 
-public class RecyclerGridActivity extends BaseToolboxActivity {
+public class RecyclerGridActivity extends BaseBarActivity {
 
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;

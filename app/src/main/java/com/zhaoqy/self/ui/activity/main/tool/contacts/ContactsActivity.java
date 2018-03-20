@@ -6,7 +6,7 @@ import android.support.v4.view.ViewPager;
 import android.widget.TextView;
 
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.ui.widget.RVPIndicator;
 
 import java.util.ArrayList;
@@ -15,7 +15,7 @@ import java.util.List;
 
 import butterknife.BindView;
 
-public class ContactsActivity extends BaseToolboxActivity {
+public class ContactsActivity extends BaseBarActivity {
 
     @BindView(R.id.title)
     TextView title;

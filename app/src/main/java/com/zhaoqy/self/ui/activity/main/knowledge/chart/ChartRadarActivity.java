@@ -6,7 +6,7 @@ import com.idtk.smallchart.chart.RadarChart;
 import com.idtk.smallchart.data.RadarData;
 import com.idtk.smallchart.interfaces.iData.IRadarData;
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.util.DpUtil;
 
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ import butterknife.BindView;
 /**
  * 雷达图
  */
-public class ChartRadarActivity extends BaseToolboxActivity {
+public class ChartRadarActivity extends BaseBarActivity {
 
     @BindView(R.id.radarChart)
     RadarChart radarChart;

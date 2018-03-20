@@ -15,12 +15,12 @@ import android.widget.Toast;
 
 import com.othershe.nicedialog.NiceDialog;
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class EditActivity extends BaseToolboxActivity implements View.OnClickListener{
+public class EditActivity extends BaseBarActivity implements View.OnClickListener{
 
     public static final int REQUEST_NICKNAME = 1;
     public static final int REQUEST_SIGNATURE = 2;

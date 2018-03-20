@@ -10,7 +10,7 @@ import com.idtk.smallchart.data.CurveData;
 import com.idtk.smallchart.data.PointShape;
 import com.idtk.smallchart.interfaces.iData.ICurveData;
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.util.DpUtil;
 
 import java.util.ArrayList;
@@ -22,7 +22,7 @@ import static com.zhaoqy.self.app.AppContext.getContext;
 /**
  * 曲线图
  */
-public class ChartCurveActivity extends BaseToolboxActivity {
+public class ChartCurveActivity extends BaseBarActivity {
 
     @BindView(R.id.curveChart)
     CurveChart curveChart;

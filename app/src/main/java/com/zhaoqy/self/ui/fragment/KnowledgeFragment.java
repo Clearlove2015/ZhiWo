@@ -14,6 +14,7 @@ import com.zhaoqy.self.ui.activity.main.knowledge.canvas.CanvasActivity;
 import com.zhaoqy.self.ui.activity.main.knowledge.chart.ChartMainActivity;
 import com.zhaoqy.self.ui.activity.main.knowledge.mvp.MvpActivity;
 import com.zhaoqy.self.ui.activity.main.knowledge.recyclerview.RecyclerViewActivity;
+import com.zhaoqy.self.ui.activity.main.knowledge.span.SpanActivity;
 import com.zhaoqy.self.ui.adapter.BookAdapter;
 import com.zhaoqy.self.ui.base.BaseFragment;
 
@@ -103,6 +104,14 @@ public class KnowledgeFragment extends BaseFragment implements BookAdapter.OnIte
                  * Canvas
                  */
                 Intent intent = new Intent(getActivity(), CanvasActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case 6: {
+                /**
+                 * SpannableString
+                 */
+                Intent intent = new Intent(getActivity(), SpanActivity.class);
                 startActivity(intent);
                 break;
             }

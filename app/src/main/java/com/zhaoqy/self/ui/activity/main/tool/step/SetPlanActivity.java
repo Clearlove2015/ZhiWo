@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.TimePicker;
 
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.ui.widget.VerticalCard;
 import com.zhaoqy.self.util.SPUtil;
 
@@ -22,7 +22,7 @@ import java.util.Locale;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class SetPlanActivity extends BaseToolboxActivity implements View.OnClickListener {
+public class SetPlanActivity extends BaseBarActivity implements View.OnClickListener {
 
     @BindView(R.id.step_number)
     EditText step_number;

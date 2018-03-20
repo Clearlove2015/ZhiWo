@@ -14,7 +14,7 @@ import android.widget.GridView;
 import android.widget.Toast;
 
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.ui.dialog.ProgressDialog;
 
 import java.io.File;
@@ -23,7 +23,7 @@ import java.util.List;
 
 import butterknife.BindView;
 
-public class ImageManagerActivity extends BaseToolboxActivity implements AdapterView.OnItemClickListener, AdapterView.OnItemLongClickListener{
+public class ImageManagerActivity extends BaseBarActivity implements AdapterView.OnItemClickListener, AdapterView.OnItemLongClickListener{
 
     private final static int SCAN_OK = 1;
     private final static int DEL_OK = 2;

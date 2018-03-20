@@ -11,7 +11,7 @@ import com.youth.banner.Banner;
 import com.youth.banner.listener.OnBannerListener;
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.activity.main.knowledge.banner.loader.GlideImageLoader;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,7 +20,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class BannerMainActivity extends BaseToolboxActivity implements View.OnClickListener, OnBannerListener {
+public class BannerMainActivity extends BaseBarActivity implements View.OnClickListener, OnBannerListener {
 
     private static final int REFRESH_COMPLETE = 0X1112;
 

@@ -3,11 +3,11 @@ package com.zhaoqy.self.ui.activity.setting.about;
 import android.widget.ImageView;
 
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import butterknife.BindView;
 
-public class AwardActivity extends BaseToolboxActivity {
+public class AwardActivity extends BaseBarActivity {
 
     @BindView(R.id.weixin)
     ImageView weixin;

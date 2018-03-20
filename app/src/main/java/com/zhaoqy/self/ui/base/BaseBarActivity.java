@@ -9,7 +9,7 @@ import com.zhaoqy.self.R;
 
 import butterknife.BindView;
 
-public abstract class BaseToolboxActivity extends BaseActivity {
+public abstract class BaseBarActivity extends BaseActivity {
 
     protected float[][] points = new float[][]{{1,10}, {2,47}, {3,11}, {4,38}, {5,9},{6,52}, {7,14}, {8,37}, {9,29}, {10,31}};
     protected float[][] points2 = new float[][]{{1,52}, {2,13}, {3,51}, {4,20}, {5,19},{6,20}, {7,54}, {8,7}, {9,19}, {10,41}};

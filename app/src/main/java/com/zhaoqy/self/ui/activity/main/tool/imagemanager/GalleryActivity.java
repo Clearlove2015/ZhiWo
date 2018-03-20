@@ -9,7 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.ui.dialog.ProgressDialog;
 
 import java.io.File;
@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class GalleryActivity extends BaseToolboxActivity implements ViewPager.OnPageChangeListener, View.OnClickListener {
+public class GalleryActivity extends BaseBarActivity implements ViewPager.OnPageChangeListener, View.OnClickListener {
 
     public final static String EXTRA_IMAGE_LIST = "image_list";
     public final static String EXTRA_IMAGE_POSITION = "image_position";

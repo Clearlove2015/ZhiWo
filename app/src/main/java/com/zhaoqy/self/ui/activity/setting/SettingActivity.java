@@ -10,7 +10,7 @@ import com.zhaoqy.self.R;
 import com.zhaoqy.self.app.AppConst;
 import com.zhaoqy.self.service.FloatingBallService;
 import com.zhaoqy.self.ui.activity.setting.about.AboutActivity;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.ui.widget.VerticalCard;
 import com.zhaoqy.self.util.CacheUtil;
 import com.zhaoqy.self.util.FileUtils;
@@ -21,7 +21,7 @@ import butterknife.OnClick;
 
 import static com.zhaoqy.self.util.FileUtils.getFileSize;
 
-public class SettingActivity extends BaseToolboxActivity implements View.OnClickListener {
+public class SettingActivity extends BaseBarActivity implements View.OnClickListener {
 
     @BindView(R.id.open_guide)
     SwitchCompat open_guide;

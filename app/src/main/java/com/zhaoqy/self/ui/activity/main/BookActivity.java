@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.adapter.BookAdapter;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,7 +21,7 @@ import java.util.List;
 
 import butterknife.BindView;
 
-public class BookActivity extends BaseToolboxActivity {
+public class BookActivity extends BaseBarActivity {
 
     public static final String BOOK_KEY = "book_key";
 

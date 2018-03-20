@@ -1,9 +1,9 @@
 package com.zhaoqy.self.ui.activity.main.knowledge.canvas;
 
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
-public class CanvasActivity extends BaseToolboxActivity {
+public class CanvasActivity extends BaseBarActivity {
 
     @Override
     protected int getLayoutResID() {

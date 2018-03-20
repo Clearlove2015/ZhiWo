@@ -8,13 +8,13 @@ import android.view.View;
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.bean.ImageItem;
 import com.zhaoqy.self.ui.adapter.ImagePickerAdapter;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import java.util.ArrayList;
 
 import butterknife.BindView;
 
-public class ImagePickerActivity extends BaseToolboxActivity implements ImagePickerAdapter.OnRecyclerViewItemClickListener{
+public class ImagePickerActivity extends BaseBarActivity implements ImagePickerAdapter.OnRecyclerViewItemClickListener{
 
     public static final int IMAGE_ITEM_ADD = -1;
     public static final int REQUEST_CODE_SELECT = 100;

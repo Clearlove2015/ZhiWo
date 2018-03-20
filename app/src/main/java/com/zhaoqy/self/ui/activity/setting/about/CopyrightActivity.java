@@ -8,7 +8,7 @@ import android.view.View;
 
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.adapter.CopyrightAdapter;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,7 +16,7 @@ import java.util.List;
 
 import butterknife.BindView;
 
-public class CopyrightActivity extends BaseToolboxActivity implements CopyrightAdapter.OnItemClickListener  {
+public class CopyrightActivity extends BaseBarActivity implements CopyrightAdapter.OnItemClickListener  {
 
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;

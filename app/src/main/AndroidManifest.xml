@@ -252,27 +252,22 @@
             android:name=".ui.activity.main.knowledge.chart.ChartMainActivity"
             android:label="Chart图表"
             android:theme="@style/BaseTheme"/>
-
         <activity
             android:name=".ui.activity.main.knowledge.chart.ChartCurveActivity"
             android:label="曲线图表"
             android:theme="@style/BaseTheme"/>
-
         <activity
             android:name=".ui.activity.main.knowledge.chart.ChartBarActivity"
             android:label="柱状图表"
             android:theme="@style/BaseTheme"/>
-
         <activity
             android:name=".ui.activity.main.knowledge.chart.ChartPolylineActivity"
             android:label="折线图表"
             android:theme="@style/BaseTheme"/>
-
         <activity
             android:name=".ui.activity.main.knowledge.chart.ChartPieActivity"
             android:label="饼状图表"
             android:theme="@style/BaseTheme"/>
-
         <activity
             android:name=".ui.activity.main.knowledge.chart.ChartRadarActivity"
             android:label="雷达图表"
@@ -281,6 +276,18 @@
             android:name=".ui.activity.main.knowledge.canvas.CanvasActivity"
             android:label="Canvas总结"
             android:theme="@style/BaseTheme"/>
+        <activity
+            android:name=".ui.activity.main.knowledge.span.SpanActivity"
+            android:label="SpannableString"
+            android:theme="@style/BaseTheme"/>
+
+        <activity
+            android:name=".ui.activity.main.knowledge.span.ClickableSpanActivity"
+            android:label="ClickSpan"
+            android:theme="@style/BaseTheme"/>
+
+
+
         <activity
             android:name=".ui.activity.main.BookActivity"
             android:label="书单"

@@ -8,7 +8,7 @@ import android.widget.GridView;
 import android.widget.TextView;
 
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.util.FileUtils;
 
 import java.io.File;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 
-public class ShowImageActivity extends BaseToolboxActivity implements AdapterView.OnItemClickListener, AdapterView.OnItemLongClickListener{
+public class ShowImageActivity extends BaseBarActivity implements AdapterView.OnItemClickListener, AdapterView.OnItemLongClickListener{
 
     @BindView(R.id.title)
     TextView mTitle;

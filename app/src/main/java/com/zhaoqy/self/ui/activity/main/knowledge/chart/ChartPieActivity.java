@@ -6,7 +6,7 @@ import com.idtk.smallchart.chart.PieChart;
 import com.idtk.smallchart.data.PieData;
 import com.idtk.smallchart.interfaces.iData.IPieData;
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.util.DpUtil;
 
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ import butterknife.BindView;
 /**
  * 饼状图
  */
-public class ChartPieActivity extends BaseToolboxActivity {
+public class ChartPieActivity extends BaseBarActivity {
 
     @BindView(R.id.pieChart)
     PieChart pieChart;

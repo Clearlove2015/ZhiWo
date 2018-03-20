@@ -10,14 +10,14 @@ import android.widget.Toast;
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.bean.SingleImageModel;
 import com.zhaoqy.self.ui.adapter.PreviewPageAdapter;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class ImagePreviewActivity extends BaseToolboxActivity implements ViewPager.OnPageChangeListener, View.OnClickListener{
+public class ImagePreviewActivity extends BaseBarActivity implements ViewPager.OnPageChangeListener, View.OnClickListener{
 
     /** 选择的照片文件夹 */
     public final static String EXTRA_DATA = "extra_data";

@@ -7,7 +7,7 @@ import com.idtk.smallchart.chart.LineChart;
 import com.idtk.smallchart.data.LineData;
 import com.idtk.smallchart.interfaces.iData.ILineData;
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.util.DpUtil;
 
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ import butterknife.BindView;
 /**
  * 折线图
  */
-public class ChartPolylineActivity extends BaseToolboxActivity {
+public class ChartPolylineActivity extends BaseBarActivity {
 
     @BindView(R.id.lineChart)
     LineChart lineChart;

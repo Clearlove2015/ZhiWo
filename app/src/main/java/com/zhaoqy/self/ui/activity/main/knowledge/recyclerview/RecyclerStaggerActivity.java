@@ -6,14 +6,14 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.adapter.recycler.StaggeredAdapter;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 
-public class RecyclerStaggerActivity extends BaseToolboxActivity {
+public class RecyclerStaggerActivity extends BaseBarActivity {
 
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;

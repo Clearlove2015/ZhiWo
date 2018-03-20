@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.adapter.recycler.RecyclerAdapter;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.ui.widget.recyclerview.decoration.LinearDivider;
 
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class RecyclerLinearActivity extends BaseToolboxActivity implements View.OnClickListener, RecyclerAdapter.OnItemClickListener {
+public class RecyclerLinearActivity extends BaseBarActivity implements View.OnClickListener, RecyclerAdapter.OnItemClickListener {
 
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;

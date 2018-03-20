@@ -19,7 +19,7 @@ import com.othershe.nicedialog.ViewConvertListener;
 import com.othershe.nicedialog.ViewHolder;
 import com.squareup.picasso.Picasso;
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.ui.widget.VerticalCard;
 import com.zhaoqy.self.util.PermissionUtils;
 import com.zhaoqy.self.util.PhotoHelper;
@@ -29,7 +29,7 @@ import java.io.File;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class UserInfoActivity extends BaseToolboxActivity implements View.OnClickListener {
+public class UserInfoActivity extends BaseBarActivity implements View.OnClickListener {
 
     public static final int REQUEST_PHOTO_TAKE = 1024;                         // 拍照请求
     public static final int REQUEST_PHOTO_GALLERY = REQUEST_PHOTO_TAKE + 1; // 从相册选取请求

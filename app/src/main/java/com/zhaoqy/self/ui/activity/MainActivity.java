@@ -27,7 +27,7 @@ import com.zhaoqy.self.ui.activity.drawer.NoteActivity;
 import com.zhaoqy.self.ui.activity.drawer.PlatformActivity;
 import com.zhaoqy.self.ui.activity.setting.SettingActivity;
 import com.zhaoqy.self.ui.animation.FabAlphaAnimate;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.ui.fragment.BookFragment;
 import com.zhaoqy.self.ui.fragment.KnowledgeFragment;
 import com.zhaoqy.self.ui.fragment.ToolFragment;
@@ -48,7 +48,7 @@ import butterknife.OnClick;
  * 4. 沉浸式效果
  * 5. butterknife的使用
  */
-public class MainActivity extends BaseToolboxActivity implements View.OnClickListener, OnFabClickListener {
+public class MainActivity extends BaseBarActivity implements View.OnClickListener, OnFabClickListener {
 
     @BindView(R.id.drawer)
     DrawerLayout drawer;

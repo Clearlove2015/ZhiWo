@@ -1,9 +1,9 @@
 package com.zhaoqy.self.ui.activity.main.tool.weather;
 
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 
-public class WeatherActivity extends BaseToolboxActivity {
+public class WeatherActivity extends BaseBarActivity {
 
     //@BindView(R.id.clear)
     //VerticalCard clear;

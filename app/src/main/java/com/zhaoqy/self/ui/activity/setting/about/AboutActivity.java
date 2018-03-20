@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.adapter.BookAdapter;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.ui.dialog.ProgressDialog;
 import com.zhaoqy.self.util.AppInfo;
 
@@ -22,7 +22,7 @@ import java.util.List;
 
 import butterknife.BindView;
 
-public class AboutActivity extends BaseToolboxActivity implements BookAdapter.OnItemClickListener {
+public class AboutActivity extends BaseBarActivity implements BookAdapter.OnItemClickListener {
 
     @BindView(R.id.vername)
     TextView vername;

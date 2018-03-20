@@ -9,7 +9,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.squareup.picasso.Picasso;
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.ui.dialog.ProgressDialog;
 import com.zhaoqy.self.util.FileUtils;
 
@@ -23,7 +23,7 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 import uk.co.senab.photoview.PhotoView;
 
-public class ImageDetailActivity extends BaseToolboxActivity implements View.OnClickListener {
+public class ImageDetailActivity extends BaseBarActivity implements View.OnClickListener {
 
     @BindView(R.id.photoview)
     PhotoView photoview;

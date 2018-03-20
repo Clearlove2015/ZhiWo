@@ -3,13 +3,13 @@ package com.zhaoqy.self.ui.activity.setting;
 import android.widget.Toast;
 
 import com.zhaoqy.self.R;
-import com.zhaoqy.self.ui.base.BaseToolboxActivity;
+import com.zhaoqy.self.ui.base.BaseBarActivity;
 import com.zhaoqy.self.ui.widget.Keyboard;
 import com.zhaoqy.self.ui.widget.PayEditText;
 
 import butterknife.BindView;
 
-public class PayPwdActivity extends BaseToolboxActivity {
+public class PayPwdActivity extends BaseBarActivity {
 
     private static final String[] KEY = new String[] {
             "1", "2", "3",

@@ -73,6 +73,7 @@
         <item>Chart图表</item>
         <item>Canvas</item>
         <item>SpannableString</item>
+        <item>greenDAO</item>
     </string-array>
 
     <string-array name="tool">

@@ -181,6 +181,8 @@
         <item>retrofit</item>
         <item>rxjava</item>
         <item>okhttp</item>
+        <item>SmallChart</item>
+        <item>utilcode</item>
     </string-array>
 
     <string-array name="recyclerview">

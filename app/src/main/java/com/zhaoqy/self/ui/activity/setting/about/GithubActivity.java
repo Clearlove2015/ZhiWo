@@ -234,6 +234,20 @@ public class GithubActivity extends BaseActivity {
                 mWebView.loadUrl("https://github.com/square/okhttp");
                 break;
             }
+            case 25: {
+                /**
+                 * SmallChart
+                 */
+                mWebView.loadUrl("https://github.com/Idtk/SmallChart");
+                break;
+            }
+            case 26: {
+                /**
+                 * utilcode
+                 */
+                mWebView.loadUrl("https://github.com/Blankj/AndroidUtilCode");
+                break;
+            }
         }
 
         mWebView.setWebViewClient(new WebViewClient() {

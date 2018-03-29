@@ -115,6 +115,22 @@ public class KnowledgeFragment extends BaseFragment implements BookAdapter.OnIte
                 startActivity(intent);
                 break;
             }
+            case 7: {
+                /**
+                 * greenDAO
+                 */
+                Intent intent = new Intent(getActivity(), SpanActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case 8: {
+                /**
+                 * TextView
+                 */
+                Intent intent = new Intent(getActivity(), SpanActivity.class);
+                startActivity(intent);
+                break;
+            }
         }
     }
 

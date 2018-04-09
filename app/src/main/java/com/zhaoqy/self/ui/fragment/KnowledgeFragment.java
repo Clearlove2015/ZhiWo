@@ -12,6 +12,7 @@ import com.zhaoqy.self.ui.activity.main.knowledge.album.AlbumActivity;
 import com.zhaoqy.self.ui.activity.main.knowledge.banner.BannerMainActivity;
 import com.zhaoqy.self.ui.activity.main.knowledge.canvas.CanvasActivity;
 import com.zhaoqy.self.ui.activity.main.knowledge.chart.ChartMainActivity;
+import com.zhaoqy.self.ui.activity.main.knowledge.multimedia.MultimediaActivity;
 import com.zhaoqy.self.ui.activity.main.knowledge.mvp.MvpActivity;
 import com.zhaoqy.self.ui.activity.main.knowledge.recyclerview.RecyclerViewActivity;
 import com.zhaoqy.self.ui.activity.main.knowledge.span.SpanActivity;
@@ -129,6 +130,14 @@ public class KnowledgeFragment extends BaseFragment implements BookAdapter.OnIte
                  * TextView
                  */
                 Intent intent = new Intent(getActivity(), TextActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case 9: {
+                /**
+                 * MultiMedia
+                 */
+                Intent intent = new Intent(getActivity(), MultimediaActivity.class);
                 startActivity(intent);
                 break;
             }

@@ -1,4 +1,4 @@
-package com.zhaoqy.self.ui.activity.main.knowledge.text;
+package com.zhaoqy.self.ui.activity.main.knowledge.multimedia;
 
 import android.content.Intent;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.zhaoqy.self.R;
+import com.zhaoqy.self.ui.activity.main.knowledge.multimedia.record.RecordActivity;
 import com.zhaoqy.self.ui.adapter.BookAdapter;
 import com.zhaoqy.self.ui.base.BaseBarActivity;
 
@@ -17,7 +18,7 @@ import java.util.List;
 
 import butterknife.BindView;
 
-public class TextActivity extends BaseBarActivity implements BookAdapter.OnItemClickListener {
+public class MultimediaActivity extends BaseBarActivity implements BookAdapter.OnItemClickListener {
 
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
@@ -28,14 +29,14 @@ public class TextActivity extends BaseBarActivity implements BookAdapter.OnItemC
 
     @Override
     protected int getLayoutResID() {
-        return R.layout.activity_text;
+        return R.layout.activity_multimedia;
     }
 
     @Override
     protected void initData() {
         mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         mDatas = new ArrayList<>();
-        mDatas.addAll(Arrays.asList(getResources().getStringArray(R.array.text)));
+        mDatas.addAll(Arrays.asList(getResources().getStringArray(R.array.multimedia)));
         mAdapter = new BookAdapter(mDatas);
         mAdapter.setOnItemClickListener(this);
         recyclerView.setLayoutManager(mLayoutManager);
@@ -47,7 +48,7 @@ public class TextActivity extends BaseBarActivity implements BookAdapter.OnItemC
     public void onItemClick(View view, int position) {
         switch (position) {
             case 0: {
-                Intent intent = new Intent(this, RunTextActivity.class);
+                Intent intent = new Intent(this, RecordActivity.class);
                 startActivity(intent);
                 break;
             }

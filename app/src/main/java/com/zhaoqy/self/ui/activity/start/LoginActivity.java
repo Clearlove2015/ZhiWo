@@ -334,6 +334,7 @@ public class LoginActivity extends BaseEventActivity implements View.OnClickList
 
     @SuppressLint("HandlerLeak")
     private Handler mCodeHandler = new Handler() {
+
         @SuppressLint("DefaultLocale")
         @Override
         public void handleMessage(Message msg) {

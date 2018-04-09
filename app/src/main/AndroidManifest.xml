@@ -42,10 +42,8 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <!-- 获取拍照权限 -->
     <uses-permission android:name="android.permission.CAMERA"/>
-
     <uses-feature android:name="android.hardware.camera"/>
     <uses-feature android:name="android.hardware.camera.autofocus"/>
-
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.GET_TASKS"/>
     <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
@@ -54,7 +52,6 @@
     <!-- 计歩 -->
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
-
     <uses-feature android:name="android.hardware.sensor.accelerometer"/>
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
@@ -288,6 +285,29 @@
             android:name=".ui.activity.main.knowledge.text.TextActivity"
             android:label="text文本"
             android:theme="@style/BaseTheme"/>
+
+        <activity
+            android:name=".ui.activity.main.knowledge.text.RunTextActivity"
+            android:label="RunText文本"
+            android:theme="@style/BaseTheme"/>
+
+        <activity
+            android:name=".ui.activity.main.knowledge.multimedia.MultimediaActivity"
+            android:label="多媒体"
+            android:theme="@style/BaseTheme"/>
+
+        <activity
+            android:name=".ui.activity.main.knowledge.multimedia.record.RecordActivity"
+            android:label="视频录制"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"/>
+
+        <activity
+            android:name=".ui.activity.main.knowledge.multimedia.record.PlayActivity"
+            android:label="播放"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"/>
+
         <activity
             android:name=".ui.activity.main.BookActivity"
             android:label="书单"
@@ -379,8 +399,7 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".ui.activity.main.knowledge.text.RunTextActivity">
-        </activity>
+
     </application>
 
 </manifest>

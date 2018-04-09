@@ -75,6 +75,7 @@
         <item>SpannableString</item>
         <item>greenDAO</item>
         <item>TextView</item>
+        <item>MultiMedia</item>
     </string-array>
 
     <string-array name="tool">
@@ -208,7 +209,10 @@
         <item>RickText</item>
     </string-array>
 
-
+    <string-array name="multimedia">
+        <item>视频录制</item>
+        <item>RickText</item>
+    </string-array>
 
     <string-array name="about">
         <item>项目主页</item>

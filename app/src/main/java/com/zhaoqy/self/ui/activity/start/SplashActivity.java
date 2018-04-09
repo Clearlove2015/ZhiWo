@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
@@ -69,6 +70,7 @@ public class SplashActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         unbinder.unbind();
+        mHandler.removeCallbacksAndMessages(null);
     }
 
     /**
@@ -94,7 +96,8 @@ public class SplashActivity extends AppCompatActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                onJump();
+                //onJump();
+                jumpToNext();
             }
 
             @Override
@@ -128,7 +131,6 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        //jump();
         requestPermissions();
     }
 
@@ -188,6 +190,7 @@ public class SplashActivity extends AppCompatActivity {
          */
         @Override
         public void onSucceed(int requestCode, @NonNull List<String> grantPermissions) {
+            isPermissionRequstFinish = true;
             if (requestCode == 100) {
                 for (String permission : grantPermissions) {
                     //Log.e("SplashActivity", "permission: " + permission);
@@ -202,9 +205,38 @@ public class SplashActivity extends AppCompatActivity {
          */
         @Override
         public void onFailed(int requestCode, @NonNull List<String> deniedPermissions) {
-
+            isPermissionRequstFinish = true;
         }
     };
+
+    private boolean isPermissionRequstFinish = false;
+
+    private  Handler mHandler = new Handler() {
+
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case 0: {
+                    if (isPermissionRequstFinish) {
+                        jumpToNext();
+                    } else {
+                        mHandler.sendEmptyMessageDelayed(0, 1000);
+                    }
+                    break;
+                }
+            }
+        }
+    };
+
+    private void jumpToNext() {
+        if (isPermissionRequstFinish) {
+            onJump();
+        } else {
+           mHandler.sendEmptyMessageDelayed(0, 1000);
+        }
+    }
+
 
     @Override
     public void onBackPressed() {

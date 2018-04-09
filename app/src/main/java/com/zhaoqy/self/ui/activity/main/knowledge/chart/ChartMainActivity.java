@@ -17,7 +17,7 @@ import java.util.List;
 
 import butterknife.BindView;
 
-public class ChartMainActivity extends BaseBarActivity implements BookAdapter.OnItemClickListener{
+public class ChartMainActivity extends BaseBarActivity implements BookAdapter.OnItemClickListener {
 
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;

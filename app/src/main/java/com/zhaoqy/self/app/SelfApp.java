@@ -3,6 +3,7 @@ package com.zhaoqy.self.app;
 import android.app.Application;
 import android.content.Context;
 
+import com.blankj.utilcode.util.Utils;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.squareup.leakcanary.LeakCanary;
 import com.zhaoqy.self.ui.activity.MainActivity;
@@ -14,7 +15,7 @@ import com.zxy.recovery.core.Recovery;
  * Created by zhaoqy on 2017/9/19.
  */
 
-public class SelfApplication extends Application {
+public class SelfApp extends Application {
 
     public static Context mContext = null;
 
@@ -38,6 +39,12 @@ public class SelfApplication extends Application {
          * Fresco使用之前，要初始化
          */
         Fresco.initialize(this);
+
+        /**
+         * 工具类初始化
+         */
+        Utils.init(this);
+        //RxTool.init(this);
 
         /**
          * 初始化Recovery

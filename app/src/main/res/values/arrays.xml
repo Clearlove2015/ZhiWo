@@ -203,6 +203,13 @@
         <item>雷达图</item>
     </string-array>
 
+    <string-array name="text">
+        <item>RunText</item>
+        <item>RickText</item>
+    </string-array>
+
+
+
     <string-array name="about">
         <item>项目主页</item>
         <item>检查更新</item>

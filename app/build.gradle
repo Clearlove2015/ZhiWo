@@ -124,5 +124,8 @@ dependencies {
     //Fresco封装 https://github.com/CarGuo/FrescoUtils
     //compile 'com.github.CarGuo:FrescoUtils:v1.2.1'
 
+    //仿微信群头像九宫格控件 https://github.com/GitLqr/LQRNineGridImageView
+    compile 'com.lqr.ninegridimageview:library:1.0.0'
+
 
 }

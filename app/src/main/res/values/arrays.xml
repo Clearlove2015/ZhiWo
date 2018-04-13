@@ -211,7 +211,6 @@
 
     <string-array name="multimedia">
         <item>视频录制</item>
-        <item>RickText</item>
     </string-array>
 
     <string-array name="about">

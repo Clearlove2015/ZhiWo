@@ -78,6 +78,12 @@
         <item>MultiMedia</item>
     </string-array>
 
+    <string-array name="injection">
+        <item>Dagger2</item>
+        <item>ButterKnife</item>
+        <item>Android Annotations</item>
+    </string-array>
+
     <string-array name="tool">
         <item>日历</item>
         <item>天气</item>

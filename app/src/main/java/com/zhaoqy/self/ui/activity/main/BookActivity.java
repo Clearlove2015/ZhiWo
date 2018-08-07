@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.zhaoqy.self.R;
 import com.zhaoqy.self.ui.adapter.BookAdapter;
 import com.zhaoqy.self.ui.base.BaseBarActivity;
+import com.zhaoqy.self.ui.widget.recyclerview.decoration.LinearDivider;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -59,7 +60,7 @@ public class BookActivity extends BaseBarActivity {
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setAdapter(mAdapter);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        //recyclerView.addItemDecoration(new LinearDivider(this, LinearLayoutManager.VERTICAL));
+        recyclerView.addItemDecoration(new LinearDivider(this, LinearLayoutManager.VERTICAL));
 
         swipeRefreshLayout.setColorSchemeColors(Color.BLUE, Color.GREEN, Color.RED, Color.YELLOW);
         swipeRefreshLayout.setEnabled(true);
